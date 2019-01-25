@@ -2,4 +2,16 @@ title: World Modelers
 description: 
 show_downloads: false
 google_analytics:
-theme: jekyll-theme-cayman
+#theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
+
+# Enable or disable the site search
+search_enabled: true
+
+# Aux links for the upper right navigation
+aux_links:
+    "World Modelers on GitHub":
+      - "//github.com/worldmodelers"
+
+# Color scheme currently only supports "dark" or nil (default)
+color_scheme:     
