@@ -20,7 +20,7 @@ INDRA functions as a hub between World Modelers machine reading systems and the 
 
 INDRA uses extractions from machine reading to generate causal statements in its standardized form, the INDRA statement. INDRA statements are then used by other modeling systems, such as [Delphi](delphi.md) and [DySE](dyse.md) to generate predictive analyses.
 
-Currently, INDRA is deployed as a REST API which is available at http://api.indra.bio:8000 with documentation at http://www.indra.bio/rest_api/docs. Note that the REST API is ideal for prototyping and for building light-weight web apps, but should not be used for large reading and assembly workflows.
+Currently, INDRA is deployed as a REST API which is available at [http://api.indra.bio:8000](http://api.indra.bio:8000) with documentation at [http://www.indra.bio/rest_api/docs](http://www.indra.bio/rest_api/docs). Note that the REST API is ideal for prototyping and for building light-weight web apps, but should not be used for large reading and assembly workflows.
 
 ## Getting Started
 
