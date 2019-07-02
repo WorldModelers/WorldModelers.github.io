@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CosmMos
+title: CauseMos
 parent: Human Machine Interfaces
 nav_order: 1
 ---
