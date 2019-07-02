@@ -5,21 +5,19 @@ parent: Reading Systems
 nav_order: 2
 ---
 
-This is a placeholder for Hume.
-
 ## Project Overview
 
-Project overview information should go here.
+Hume is a machine reading and annotation tool developed by [Raytheon BBN](https://www.raytheon.com). It extracts causal relations from text. 
 
-* Project website: 
-* Project maintainer: 
-* Points of contact:
+* Project website: TBD
+* Project maintainer: [Raytheon BBN](https://www.raytheon.com)
+* Points of contact: [Bonan Min](mailto:bonan.min@raytheon.com)
 
 ## World Modelers Integration
 
-Description of how this project integrates with World Modelers and why it is important to the overall World Modelers pipeline.
+Currently, Hume is run as standalone software. Output from Hume reading is stored in JSON-LD format and can be used by Hume for model assembly. 
 
 
 ## Getting Started
 
-Quick start information for using this component. This may simply be a pointer to the project's documentation or it may offer specialized installation/deployment information with respect to the component's use in World Modelers.
+Currently, Hume is not open source. It can be run via Docker and appropriate quick start information will be posted here once it is available.
