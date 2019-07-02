@@ -9,7 +9,7 @@ nav_order: 2
 
 Hume is a machine reading and annotation tool developed by [Raytheon BBN](https://www.raytheon.com). It extracts causal relations from text. 
 
-* Project website: TBD
+* Project website: Coming soon
 * Project maintainer: [Raytheon BBN](https://www.raytheon.com)
 * Points of contact: [Bonan Min](mailto:bonan.min@raytheon.com)
 
