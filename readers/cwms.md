@@ -17,7 +17,6 @@ CWMS is an extension of TRIPS and is developed by the Florida Institue for Human
 
 CWMS is invoked using IHMC's [TRIPS Web API](http://trips.ihmc.us/parser/api.html). It can be invoked through [INDRA](http://indra.readthedocs.io/) or as a standalone component.
 
-
 ## Getting Started
 
 Text can easily be submitted to the live CWMS endpoint available through the INDRA API. To do this, you can try (using `Python`):
