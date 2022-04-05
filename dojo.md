@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dojo
+title: Model and Data Registration
 nav_order: 4
 has_toc: true
 ---
