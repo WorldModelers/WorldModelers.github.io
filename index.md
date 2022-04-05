@@ -1,3 +1,10 @@
+---
+layout: default
+title: Home
+nav_order: 1
+has_toc: true
+---
+
 # World Modelers
 
 The World Modelers program aims to develop technology that integrates qualitative causal analyses with quantitative models and relevant data to provide a comprehensive understanding of complicated, dynamic national security questions. The goal is to develop approaches that can accommodate and integrate dozens of contributing models connected by thousands of pathways—orders of magnitude beyond what is possible today.
