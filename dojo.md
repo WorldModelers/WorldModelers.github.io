@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Home
+title: Dojo
 nav_order: 4
 has_toc: true
 ---
 
 <a href="https://github.com/dojo-modeling/dojo">
-    <img src="imgs/Dojo_Logo_profile.png" width="200px"/> 
+    <img src="images/dojo/Dojo_Logo_profile.png" width="200px"/> 
 </a>
 
 Dojo ([https://github.com/dojo-modeling](https://github.com/dojo-modeling)) is a suite of software tools that allows domain experts to register their models using an intuitive web based terminal emulator. Dojo models can be executed via a standardized, expressive API by wrapping heterogenous models into a consistent interface for parameterization and transforming model outputs into a consistent, easy to consume format. Dojo models facilitate reproducible research by enabling modelers to containerize and share their models with guarantees that the model will perform as they expect outside their own compute environment. Additionally, Dojo provides a mechanism for analysts and domain experts to register and transform datasets for use in downstream modeling workflows.
@@ -16,7 +16,6 @@ Dojo ([https://github.com/dojo-modeling](https://github.com/dojo-modeling)) is a
 1. [Model Registration](./model-registration.md)
 2. [Data Registration](./data-registration.md)
 3. [Model Execution](./model-execution.md)
-4. [Dojo API](./dojo-api.md)
 
 ## Model Registration
 
@@ -28,11 +27,13 @@ The model registration workflow is designed to provide domain modelers with a fr
     <i>Dojo Containerization Environment</i>
 </p>
 
+Learn more about the model registration process in Dojo [here](https://www.dojo-modeling.com/model-registration.html).
+
 ## Data Registration
 
  Dojo offers a powerful user-driven data normalization capability through its data registration workflow. This workflow is designed to allow analysts, modelers and other users to curate their own datasets for modeling and analysis. Dojo supports the registration of CSV, Excel File, GeoTiff or NetCDF; once registered, datasets are transformed into _indicators_ that are represented in a canonical parquet format with a well-defined structure. Typical examples of data that might be registered are indicators from the [World Bank](https://data.worldbank.org/), [FAO](http://www.fao.org/statistics/en/), or [ACLED](https://acleddata.com/), however users can bring anything they think will be useful for modeling or other analyses. 
 
-Through this process, Dojo captures metadata about the dataset's provenance as well as descriptors for each of its features in order to transform it into a ready-to-use and well understood format. You can learn more about the data registration process [here](./data-registration.html).
+Through this process, Dojo captures metadata about the dataset's provenance as well as descriptors for each of its features in order to transform it into a ready-to-use and well understood format. You can learn more about the data registration process [here](https://www.dojo-modeling.com/data-registration.html).
 
 Normalizing data and model outputs to a consistent Geotemporal format facilitates rapid inter-model comparison and visualization via platforms such as [Uncharted Software's](https://uncharted.software/) Causemos tool.
 
@@ -44,8 +45,16 @@ Normalizing data and model outputs to a consistent Geotemporal format facilitate
 
 ## Model Execution
 
-This section provides information on how to use Dojo's model execution CLI. This tool enables users to execute Dojo models locally via Docker.
+Dojo offers a command-line interface library for black box domain model execution. This library enables users to execute domain models locally.
 
-## Dojo API
+The library has 7 key methods:
 
-This section provides an overview of how to interact with the Dojo API for model discovery, model execution, fetching model runs, and debugging models.
+- List the latest versions of all available models.
+- Print parameter metadata for a selected model.
+- Print a summary of the output and accessory files of a selected model.
+- Print a desription of a selected model.
+- Get the results of a detached model run that has finished.
+- Run a model.
+- List all versions of a model.
+
+Learn more about executing models with Dojo [here](https://www.dojo-modeling.com/model-execution.html).
