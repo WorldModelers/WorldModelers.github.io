@@ -13,6 +13,8 @@ General information about the WorldModelers repos related to modeling/analysis a
 
 ### Delphi
 
+University of Arizona's top-down modeling engine. See [https://ml4ai.github.io/delphi/index.html](https://ml4ai.github.io/delphi/index.html) for more information.
+
 ### DySE
 
 ### Sensei
