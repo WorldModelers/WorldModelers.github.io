@@ -3,6 +3,7 @@ layout: default
 title: Registering Data in Dojo
 parent: Registering and Analyzing Structured Data
 grand_parent: Bottom Up Quantitative Systems
+nav_order: 1
 ---
 
 <a href="https://github.com/dojo-modeling/dojo">
@@ -18,7 +19,7 @@ Through this process, Dojo captures metadata about the dataset's provenance as w
 Normalizing data and model outputs to a consistent Geotemporal format facilitates rapid inter-model comparison and visualization via platforms such as [Uncharted Software's](https://uncharted.software/) Causemos tool.
 
 <p align="center">
-    <img src="images/dojo/causemos_viz.png" width="400" title="Causemos Modeling Platform"/> 
+    <img src="../../images/dojo/causemos_viz.png" width="400" title="Causemos Modeling Platform"/> 
     <br/>
     <i>Uncharted's Causemos Platform</i>
 </p>

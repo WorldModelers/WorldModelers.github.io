@@ -3,6 +3,8 @@ layout: default
 title: Models Overview
 parent: Registering and Running Expert Domain Models
 grand_parent: Bottom Up Quantitative Systems
+nav_order: 4
+has_children: true
 ---
 
 
@@ -15,9 +17,6 @@ Currently, we support the following models:
 
 | Team      | Category     | Model                                | Description                                                             | 
 |-----------|--------------|--------------------------------------|-------------------------------------------------------------------------| 
-| Atlas AI  | Demographic  | [**Asset Wealth Model**](AtlasAI.md)                   | Asset levels for 2003 to 2018                                           | 
-| Atlas AI  | Demographic  | [**Consumption Model**](AtlasAI.md)                    | Household consumption for 2003 to 2018                                  | 
-| Atlas AI  | Agricultural | [**Atlas AI CropLand Use Model**](AtlasAI.md)          | Probability estimates of whether land is cropped at 480m res.           | 
 | UCSB      | Weather      | [**CHIRPS**](CHIRPS.md)                               | Rainfall levels and anomalies for 2008 through end of March 2018        | 
 | UCSB      | Weather      | [**CHIRPS-GEFS**](CHIRPS.md)                               | Daily near-term ensemble rainfall forecasts        | 
 | UFL       | Agricultural | [**DSSAT**](DSSAT.md)                                | Maize, teff, sorghum, and wheat yields from 1984 through 2017         | 
