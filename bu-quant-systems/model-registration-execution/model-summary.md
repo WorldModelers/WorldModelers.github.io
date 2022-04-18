@@ -17,22 +17,21 @@ Currently, we support the following models:
 
 | Team      | Category     | Model                                | Description                                                             | 
 |-----------|--------------|--------------------------------------|-------------------------------------------------------------------------| 
-| UCSB      | Weather      | [**CHIRPS**](CHIRPS.md)                               | Rainfall levels and anomalies for 2008 through end of March 2018        | 
-| UCSB      | Weather      | [**CHIRPS-GEFS**](CHIRPS.md)                               | Daily near-term ensemble rainfall forecasts        | 
-| UFL       | Agricultural | [**DSSAT**](DSSAT.md)                                | Maize, teff, sorghum, and wheat yields from 1984 through 2017         | 
-| MINT      | Hydrology    | [**Flood Severity Index Model**](FSI.md)           | Days with flooding for a given month for 2008 to 2017                   | 
-| MINT      | Hydrology    | [**PIHM**](PIHM.md)                                 | Water height for 2008 onwards for various basins                        | 
-| MINT      | Hydrology    | [**Topoflow**](Topoflow.md)                             | Water heights for various basins                                        | 
-| Kimetrica | Demographic  | [**Kimetrica Population Model**](Kimetrica.md)           | Ethiopia population from 2000 onward                                    | 
-| Kimetrica | Demographic  | [**Kimetrica Malnutrition model**](Kimetrica.md)         | Malnutrition cases 2007 to 2018                                         | 
-| Kimetrica | Economic     | [**Kimetrica Market Price Model**](Kimetrica.md)         | Commodity pricing for SS and Ethiopia 2017-2018                         | 
-| Columbia  | Economic     | [**Food Shocks Cascade**](FSC.md)                  | Induce a regional shock to wheat production                             | 
-| Columbia  | Agricultural | [**AgMIP’s Seasonal Crop Yield Emulator**](AgMIP.md) | Percent yield anomalies from detrended 1980 - 2010 mean                       | 
-| CSIRO     | Agricultural | [**APSIM**](CSIRO.md)                                | Multiple scenarios (rain, temp, irrigation, fertilizer, etc) for 2018 | 
-| CSIRO     | Agricultural | [**G-Range**](CSIRO.md)                              | Multiple scenarios (rain, temp, irrigation, fertilizer, etc) for 2018 | 
-| CSIRO     | Agricultural | [**CLEM**](CSIRO.md)                                 | Sales and demand for multiple crops at the farm level                   | 
-| PIK       | Agricultural | [**Yield Anomalies LPJmL**](LPJmL.md)                | Yield anomalies from 1984 through April 2018                            | 
-| PIK       | Agricultural | [**LPJmL 2018**](LPJmL.md)                           | Crop production projections for 2018                                    | 
-| PIK       | Agricultural | [**LPJmL Historic**](LPJmL.md)                       | Historic crop production from 1984 to 2017                              | 
-| PIK       | Economic     | [**Multi TWIST**](TWiST.md)                          | Global wheat prices for various scenarios 1980 to 2017                  | 
-| N/A       | Demographic  | [**World Pop**](external-models.md)                            | Ethiopia population from 2000 onward, in 5 year intervals             | 
+| UCSB      | Weather      | [**CHIRPS**](models/CHIRPS.md)                               | Rainfall levels and anomalies for 2008 through end of March 2018        | 
+| UCSB      | Weather      | [**CHIRPS-GEFS**](models/CHIRPS.md)                               | Daily near-term ensemble rainfall forecasts        | 
+| UFL       | Agricultural | [**DSSAT**](models/DSSAT.md)                                | Maize, teff, sorghum, and wheat yields from 1984 through 2017         | 
+| MINT      | Hydrology    | [**Flood Severity Index Model**](models/FSI.md)           | Days with flooding for a given month for 2008 to 2017                   | 
+| MINT      | Hydrology    | [**PIHM**](models/PIHM.md)                                 | Water height for 2008 onwards for various basins                        | 
+| MINT      | Hydrology    | [**Topoflow**](models/Topoflow.md)                             | Water heights for various basins                                        | 
+| Kimetrica | Demographic  | [**Kimetrica Population Model**](models/Kimetrica.md)           | Ethiopia population from 2000 onward                                    | 
+| Kimetrica | Demographic  | [**Kimetrica Malnutrition model**](models/Kimetrica.md)         | Malnutrition cases 2007 to 2018                                         | 
+| Kimetrica | Economic     | [**Kimetrica Market Price Model**](models/Kimetrica.md)         | Commodity pricing for SS and Ethiopia 2017-2018                         | 
+| Columbia  | Economic     | [**Food Shocks Cascade**](models/FSC.md)                  | Induce a regional shock to wheat production                             | 
+| Columbia  | Agricultural | [**AgMIP’s Seasonal Crop Yield Emulator**](models/AgMIP.md) | Percent yield anomalies from detrended 1980 - 2010 mean                       | 
+| CSIRO     | Agricultural | [**APSIM**](models/CSIRO.md)                                | Multiple scenarios (rain, temp, irrigation, fertilizer, etc) for 2018 | 
+| CSIRO     | Agricultural | [**G-Range**](models/CSIRO.md)                              | Multiple scenarios (rain, temp, irrigation, fertilizer, etc) for 2018 | 
+| CSIRO     | Agricultural | [**CLEM**](models/CSIRO.md)                                 | Sales and demand for multiple crops at the farm level                   | 
+| PIK       | Agricultural | [**Yield Anomalies LPJmL**](models/LPJmL.md)                | Yield anomalies from 1984 through April 2018                            | 
+| PIK       | Agricultural | [**LPJmL 2018**](models/LPJmL.md)                           | Crop production projections for 2018                                    | 
+| PIK       | Agricultural | [**LPJmL Historic**](models/LPJmL.md)                       | Historic crop production from 1984 to 2017                              | 
+| PIK       | Economic     | [**Multi TWIST**](models/TWiST.md)                          | Global wheat prices for various scenarios 1980 to 2017                  |
