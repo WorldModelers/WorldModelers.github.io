@@ -3,6 +3,7 @@ layout: default
 title: Delphi
 parent: Top-Down Modeling and HMI
 has_toc: true
+nav_order: 2
 ---
 
 # Delphi

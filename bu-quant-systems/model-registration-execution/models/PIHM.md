@@ -1,6 +1,7 @@
 ---
 layout: default
 parent: Models Overview
+grand_parent: Registering and Running Expert Domain Models
 ---
 
 # PIHM
