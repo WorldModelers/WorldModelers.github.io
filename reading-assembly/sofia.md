@@ -1,8 +1,8 @@
 ---
-title: INDRA
+title: Sofia
 has_children: false
 parent: Reading and Assembly
-nav_order: 7
+nav_order: 4
 ---
 # Sofia
 

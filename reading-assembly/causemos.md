@@ -1,8 +1,8 @@
 ---
-title: CauseMos
+title: Causemos
 has_children: false
 parent: Reading and Assembly
-nav_order: 2
+nav_order: 6
 ---
 # Causemos
 Causemos is the main HMI for the World Modelers program, built and maintained by Uncharted Software.

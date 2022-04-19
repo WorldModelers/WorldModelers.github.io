@@ -2,6 +2,7 @@
 layout: default
 title: Repository Overview and Licenses
 parent: Reading and Assembly
+nav_order: 7
 has_toc: true
 ---
 

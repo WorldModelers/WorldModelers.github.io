@@ -1,10 +1,10 @@
 ---
-title: INDRA
+title: INDRA World
 has_children: false
 parent: Reading and Assembly
-nav_order: 6
+nav_order: 5
 ---
-# INDRA
+# INDRA World
 
 INDRA World is a knowledge assembly system that ingests causal relations
 extracted by one or more reading systems from documents, captures these in

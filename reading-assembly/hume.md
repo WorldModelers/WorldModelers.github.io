@@ -2,7 +2,7 @@
 title: HUME
 has_children: false
 parent: Reading and Assembly
-nav_order: 5
+nav_order: 3
 ---
 # HUME
 
