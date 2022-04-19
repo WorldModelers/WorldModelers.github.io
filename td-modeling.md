@@ -17,6 +17,8 @@ University of Arizona's top-down modeling engine. See [https://ml4ai.github.io/d
 
 ### DySE
 
+University of Pittsburgh's top-down modeling engine. See [https://github.com/zgxlhy/dyse_wm](https://github.com/zgxlhy/dyse_wm) for more information.
+
 ### Sensei
 
 Jataware's top-down modeling engine. See [https://github.com/dojo-modeling/sensei](https://github.com/dojo-modeling/sensei) for more information.
