@@ -6,6 +6,8 @@ nav_order: 7
 has_toc: true
 ---
 
+## Reading and knowledge assembly software
+
 ### Eidos
 
 Eidos is the machine reading system developed by the CLU lab at University of Arizona. This repository includes the reading software as well as code for integrating with DART.
