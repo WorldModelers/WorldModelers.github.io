@@ -13,4 +13,8 @@ World Modelers analyses are intended to be timely enough to recommend specific a
 
 World Modelers technologies will be applied to increasingly varied use cases as they mature through the phases of the program. Questions for analysis will typically be framed at subnational scales and look one to five years into the future, although the factors that influence outcomes of interest might operate on larger spatial and temporal scales. This subnational focus reflects the changing nature of conflict and security, which, increasingly, plays out in cities and districts. The first use case of World Modelers is food insecurity resulting from the interactions of multiple factors, including climate, water availability, soil viability, market instability, and physical security.
 
-![CauseMos](images/causemos/causemos_example.png) 
+<p align="center">
+    <img src="images/causemos/causemos_example.png" title="Causemos Modeling Platform"/> 
+    <br/>
+    <i>Uncharted's Causemos Platform</i>
+</p>
