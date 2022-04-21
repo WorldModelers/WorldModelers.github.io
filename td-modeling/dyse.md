@@ -17,13 +17,13 @@ has_toc: false
 
 The DySE simulator is a discrete state network model projection tool which leverages directed interaction graphs to simulate how influences propagate in complex systems. In the graph, each node represents a single concept, and each directed edge represents an interaction/influence. It is used in a wide range of modeling challenges where the interactions between system components play a dominant role, in contrast to individual component behaviors. There are two types of supported influences: level-based regulation where a level of an element (regulator) is influencing the target element, and trend-based regulation where trend (difference between the current and the previous level) is considered instead.
 
-![Fig. 1](images/dyse_doc_fig1.jpg) 
+![Fig. 1](../images/dyse_doc_fig1.jpg) 
 
 Fig. 1: An example of DySE model underlying network
 
 The interactions can have either positive or negative polarity. Positive level-based regulation increases the target element's level proportionally to the level of the regulator, while negative level-based regulation decreases it. With positive trend-based regulation an increase in the regulator causes an increase in the regulated element (target), while a decrease in the regulator causes a decrease in the regulated element. The opposite happens with negative trend-based regulation: an increase in the regulator results in a decrease in the regulated element, while a decrease in the regulator results in an increase in the regulated element.
 
-![Fig. 2](images/dyse_doc_fig2.jpg) 
+![Fig. 2](../images/dyse_doc_fig2.jpg) 
 
 Fig. 2: DySE regulation types
 
@@ -37,7 +37,7 @@ Model element is a node with a discrete variable (level). Each element in the mo
 5. Negative: expression for the update function which encodes negative influences on the element
 6. Initial 0: initial level value and encoded constraints (user-clamped values at specified simulation time steps)
 
-![Fig. 3](images/dyse_doc_fig3.png) 
+![Fig. 3](../images/dyse_doc_fig3.png) 
 
 Fig. 3: Element naming convention with respect to the interaction between them
 
@@ -64,7 +64,7 @@ Alongside the simulator, DySE provides utilities for preprocessing historical da
 
 Weights inference is challenging, as many of the nodes in the network can have missing or poor-quality data. Typically, these are treated with Bayesian inference, but this approach could be considered too slow for practical purposes. To find a balanced solution, DySE has a graph crawling utility algorithm which aligns time grids of the influence sets and their regulated elements and performs local non-negative linear regression fits wherever possible. If weight inference from data is impossible, DySE assigns defaults of trend weight equal to 0.5, and level weight equal to 0.
 
-![Fig. 4](images/dyse_doc_fig4.png)
+![Fig. 4](../images/dyse_doc_fig4.png)
 
 Fig. 4: DySE simulator workflow
 
@@ -100,7 +100,7 @@ Implementation Types: To balance the running speed and analysis accuracy, we imp
 
 Note that in CauseMos, these matrices are visualized via a colormap, and entries are annotated by their rank within the matrices. In the colormap, the darkness of an entry suggests the magnitude of the influence, the annotated number is the order of the influence magnitude among all influences, ranking from the highest to the lowest. In the DySE engine, the returned matrices are alphabetical in the order of element names, but the CauseMos interface also provides flexibility of ranking them by a certain row or column. For example, the users can sort the matrix by the most impact on crops production via clicking ‘crops production’ on the ‘impact’ row.
 
-![Fig. 5](images/dyse_doc_fig5.png)
+![Fig. 5](../images/dyse_doc_fig5.png)
 
 Fig. 5: An example of influence matrix shown as a colormap in CauseMos interface
 
@@ -109,7 +109,7 @@ Fig. 5: An example of influence matrix shown as a colormap in CauseMos interface
 
 Users start with a CAG assembled from concepts and interactions. Users then assign weights and initial values , and then run DySE’s projection engine to forecast the change curve for concepts of interest. After this point, sensitivity analysis can be conducted to obtain an immediate influence matrix and then a global influence matrix. The returned matrices are visualized in the CauseMos interface. Each time a user changes the CAG (e.g., CAG structure, weight values or initial values), new matrices will be generated accordingly.
  
-![Fig. 6](images/dyse_doc_fig6.png)
+![Fig. 6](../images/dyse_doc_fig6.png)
 
 Fig. 6: Pipeline of sensitivity and path analysis in DySE engine
 
@@ -143,7 +143,7 @@ Based on different use cases, a number of paths from any source(s) to any target
 
 Note that in CauseMos interface, the pathway analysis is located at ‘ANALYTICS > > Influence Path’ on the left menu bar, top paths from one source to one target will be generated, ranked by the path score from the smallest to the largest (i.e., from the most influential to the least). When the user clicks on a path in the list, that path will be highlighted in the CAG.
  
-![Fig. 7](images/dyse_doc_fig7.png)
+![Fig. 7](../images/dyse_doc_fig7.png)
 
 Fig. 7: An example of pathway analysis result in CauseMos
 

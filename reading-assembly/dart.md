@@ -14,7 +14,7 @@ search, and it handles storage and retrieval of reader outputs. Finally, it prov
 for managing and developing the ontologies used by the readers to ground causal extractions. 
 
 <p align="center">
-  <img src="images/dart/architecture.png">
+  <img src="../images/dart/architecture.png">
 </p>
 
 The DART code repositories [can be found here](https://github.com/twosixlabs-dart).
@@ -84,7 +84,7 @@ To manage DART's ontologies, the user can navigate to the `Concepts Explorer` to
 be accessed by opening the toolbar menu and clicking "Concepts Explorer" or by navigating to `[base-url]/concepts`:
 
 <p align="center">
-  <img src="images/dart/navigate-concepts-explorer.png">
+  <img src="../images/dart/navigate-concepts-explorer.png">
 </p>
 
 `Concepts Explorer` provides an ontology editor, which will initially be blank, and a panel allowing the user to 
@@ -95,7 +95,7 @@ To upload an ontology, click `Choose Ontology File,` and then `Upload Ontology` 
 ontology file:
 
 <p align="center">
-  <img src="images/dart/ontology-upload-buttons.png">
+  <img src="../images/dart/ontology-upload-buttons.png">
 </p>
 
 To edit the ontology please review the [Ontology-In-A-Day (OIAD) documentation](???), which explains how to use 
@@ -108,7 +108,7 @@ Once an acceptable ontology is loaded in the editor, the user can publish it to 
 3. Click "Publish staged"
 
 <p align="center">
-  <img src="images/dart/ontology-publication.png" width="470">
+  <img src="../images/dart/ontology-publication.png" width="470">
 </p>
 
 #### Document Submission
@@ -149,14 +149,14 @@ To upload a component via DART-UI, navigate to the `Document Upload` tool in DAR
 the toolbar menu and clicking "Document Upload" or by navigating to `[base-url]/forklift`:
 
 <p align="center">
-  <img src="images/dart/navigate-document-upload.png">
+  <img src="../images/dart/navigate-document-upload.png">
 </p>
 
 The panel at the top of the document upload tool allows the user to choose the target tenant, if there are more than one 
 tenants to choose from, and set the genre and labels of the uploaded documents:
 
 <p align="center">
-  <img src="images/dart/forklift-metadata.png" width="470">
+  <img src="../images/dart/forklift-metadata.png" width="470">
 </p>
 
 To select documents for upload, the user can click the button labelled "CHOOSE FILES". The user can select 
@@ -173,7 +173,7 @@ examine the document's extracted text, metadata, and other preliminary extractio
 will also be propagated to the readers.
 
 <p align="center">
-  <img src="images/dart/forklift-submission.png">
+  <img src="../images/dart/forklift-submission.png">
 </p>
 
 
