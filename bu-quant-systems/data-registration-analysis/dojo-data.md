@@ -7,7 +7,7 @@ nav_order: 1
 ---
 
 <a href="https://github.com/dojo-modeling/dojo">
-    <img src="images/dojo/Dojo_Logo_profile.png" width="200px"/> 
+    <img src="../../images/dojo/Dojo_Logo_profile.png" width="200px"/> 
 </a>
 
 ## Data Registration
