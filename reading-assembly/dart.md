@@ -59,7 +59,7 @@ This should bring up a command prompt (`#`). Run `dart --version` to confirm tha
 
 ### Local Deployment
 
-A DART deployment that includes reading and assembly will need approximately ??? cores/cpus and ??? Gb memory to function. If your local machine can support this, you can stand up a local instance of DART using the following command:
+For a DART-In-A-Box deployment, which includes reading and assembly, it is recommended to provide 64 CPUs and 128 Gb memory. If your local machine can support this, you can stand up a local instance of DART using the following command:
 
 ```bash
 dart pipeline deploy --diab-dir [optional-data-directory]
@@ -114,19 +114,19 @@ To add additional tenants, you can either use DART-CLI or the web-based user int
 To add tenants using DART-CLI, use the following:
 
 ```bash
-dart -p [profile] tenants add [tenant-name]
+dart -p [profile-name] tenants add [tenant-name]
 ```
 
 To remove a tenant:
 
 ```bash
-dart -p [profile] tenants rm [tenant-name]
+dart -p [profile-name] tenants rm [tenant-name]
 ```
 
 To retrieve a current list of available tenants:
 
 ```bash
-dart -p [profile] tenants ls
+dart -p [profile-name] tenants ls
 ```
 
 ##### 2. Web interface tenant management
@@ -200,21 +200,23 @@ Documents can be uploaded in two ways:
 To upload one or more documents via DART-CLI, use the forklift command:
 
 ```bash
-dart -p [profile] --tenant [tenant-name] forklift submit [file 1] [file 2] ...
+dart -p [profile-name] --tenant [tenant-name] forklift submit [file 1] [file 2] ...
 ```
 
 To upload an entire directory of files:
 
 ```bash
-dart -p [profile] --tenant [tenant-name] forklift submit --input-dir [directory]
+dart -p [profile-name] --tenant [tenant-name] forklift submit --input-dir [directory]
 ```
+
+You can specify multiple tenants by repeated usage of the `--tenant` option.
 
 Various kinds of metadata can be submitted along with the file, which will be incorporated into the document 
 metadata within DART and propagated with document to the rest of the World Modelers system. This metadata 
 can be specified via command-line options:
 
 ```bash
-dart -p [profile] forklift submit \
+dart -p [profile-name] forklift submit \
     --tenant [tenant-name]
     --genre news-article \
     --label some-label \
