@@ -111,7 +111,7 @@ The structure of this JSON file follows the `metadata.json` entry described
 An example CLI call for this workflow is as follows:
 ```
 indra_world --reader-output-dart-query READER_OUTPUT_DART_QUERY --ontology-id ONTOLOGY_ID --output-folder OUTPUT_FOLDER --causemos-metadata CAUSEMOS_METADATA
-
+```
 <a id="w5"></a>
 ### [W5](index.html#w5) Document management + reading + integration/assembly + HMI + BYOD
 
