@@ -10,7 +10,7 @@ nav_order: 2
 This document describes usage modes that are explicitly supported and documented as workflow templates (W1-5 below). While these templates don’t cover every conceivable combination and usage mode, they are likely to be relevant for typical use cases. Customizations to the ontology and the usage of associated tools cuts across all of these workflows, and can in principle be relevant for any of them, therefore, these are documented separately.
 
 <p align="center">
-  <img src="images/workflows.png">
+  <img src="images/workflows.png" width="500">
 </p>
 
 ## Documentation by Workflow
