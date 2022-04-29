@@ -17,7 +17,7 @@ University of Arizona's top-down modeling engine. See [https://ml4ai.github.io/d
 
 ### DySE
 
-University of Pittsburgh's top-down modeling engine. See [https://github.com/zgxlhy/dyse_wm](https://github.com/zgxlhy/dyse_wm) for more information.
+University of Pittsburgh's top-down modeling engine. See [https://github.com/pitt-miskov-zivanov-lab/dyse_wm](https://github.com/pitt-miskov-zivanov-lab/dyse_wm) for more information.
 
 ### Sensei
 
