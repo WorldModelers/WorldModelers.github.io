@@ -9,7 +9,7 @@ has_toc: false
 
 # DySE
 
-[DySE](https://github.com/zgxlhy/dyse_wm) (Dynamic Systems Explanation) is a framework for studying dynamics in systems representable as networks of interacting modules. 
+[DySE](https://github.com/pitt-miskov-zivanov-lab/dyse_wm) (Dynamic Systems Explanation) is a framework for studying dynamics in systems representable as networks of interacting modules. 
 
 ## 1. DySE Simulator
 
