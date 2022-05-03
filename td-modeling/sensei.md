@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sensei
-parent: Top-Down Modeling and HMI
+parent: Top-Down Modeling
 has_toc: true
 nav_order: 4
 ---
