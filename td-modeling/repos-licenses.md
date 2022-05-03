@@ -40,9 +40,9 @@ The API and data-exchange format can be found in
 
 ### Causemos
 Causemos is split into the following modules to support top-down modeling:
-- HMI: https://github.com/uncharted-causemos/causemos
-- Causemos data service: https://github.com/uncharted-causemos/wm-go
-- Causemos recommendation service: https://github.com/uncharted-causemos/wm-curation-recommendation
-- Unstructured extraction pipeline: https://github.com/uncharted-causemos/anansi
-- Structured data pipeline: https://github.com/uncharted-causemos/slow-tortoise`
+- HMI: [https://github.com/uncharted-causemos/causemos](https://github.com/uncharted-causemos/causemos)
+- Causemos data service: [https://github.com/uncharted-causemos/wm-go](https://github.com/uncharted-causemos/wm-go)
+- Causemos recommendation service: [https://github.com/uncharted-causemos/wm-curation-recommendation](https://github.com/uncharted-causemos/wm-curation-recommendation)
+- Unstructured extraction pipeline: [https://github.com/uncharted-causemos/anansi](https://github.com/uncharted-causemos/anansi)
+- Structured data pipeline: [https://github.com/uncharted-causemos/slow-tortoise](https://github.com/uncharted-causemos/slow-tortoise)
 - License:
