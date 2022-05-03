@@ -1,7 +1,7 @@
 ---
 layout: default
 title: DySE
-parent: Top-Down Modeling and HMI
+parent: Top-Down Modeling
 nav_order: 3
 has_children: false
 has_toc: true
