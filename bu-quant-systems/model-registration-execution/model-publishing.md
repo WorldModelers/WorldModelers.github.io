@@ -7,3 +7,5 @@ nav_order: 2
 ---
 
 # Coming Soon
+
+Placeholder for model publishing workflow in Causemos
