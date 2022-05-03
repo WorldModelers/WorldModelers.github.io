@@ -7,3 +7,5 @@ nav_order: 4
 ---
 
 # Coming Soon
+
+Placeholder for Dojo and Causemos repositories related to structured data registration and analysis
