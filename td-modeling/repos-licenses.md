@@ -15,13 +15,13 @@ World Modelers repositories related to top-down modeling/analysis and the human-
 
 University of Arizona's top-down modeling engine. 
 - Repository: See [https://ml4ai.github.io/delphi/index.html](https://ml4ai.github.io/delphi/index.html) for more information.
-- License: 
+- License: Apache [https://ml4ai.github.io/delphi/index.html#license-and-funding]
 
 ### DySE
 
 University of Pittsburgh's top-down modeling engine. 
 - Repository: See [https://github.com/pitt-miskov-zivanov-lab/dyse_wm](https://github.com/pitt-miskov-zivanov-lab/dyse_wm) for more information.
-- License: 
+- License: MIT [https://github.com/pitt-miskov-zivanov-lab/dyse_wm/blob/main/LICENSE.txt]
 
 ### Sensei
 
