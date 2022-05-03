@@ -7,3 +7,5 @@ nav_order: 5
 ---
 
 # Coming Soon
+
+Dojo and Causemos repositories for registration and execution of expert domain models in the World Modelers ecosystem
