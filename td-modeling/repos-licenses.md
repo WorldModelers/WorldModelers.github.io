@@ -14,20 +14,20 @@ World Modelers repositories related to top-down modeling/analysis and the human-
 ### Delphi
 
 University of Arizona's top-down modeling engine. 
-Respository: See [https://ml4ai.github.io/delphi/index.html](https://ml4ai.github.io/delphi/index.html) for more information.
-License: 
+- Repository: See [https://ml4ai.github.io/delphi/index.html](https://ml4ai.github.io/delphi/index.html) for more information.
+- License: 
 
 ### DySE
 
 University of Pittsburgh's top-down modeling engine. 
-Repository: See [https://github.com/pitt-miskov-zivanov-lab/dyse_wm](https://github.com/pitt-miskov-zivanov-lab/dyse_wm) for more information.
-License: 
+- Repository: See [https://github.com/pitt-miskov-zivanov-lab/dyse_wm](https://github.com/pitt-miskov-zivanov-lab/dyse_wm) for more information.
+- License: 
 
 ### Sensei
 
 Jataware's top-down modeling engine. 
-Respository: See [https://github.com/dojo-modeling/sensei](https://github.com/dojo-modeling/sensei) for more information.
-License:
+- Repository: See [https://github.com/dojo-modeling/sensei](https://github.com/dojo-modeling/sensei) for more information.
+- License:
 
 
 ## HMI Software Components
@@ -45,4 +45,4 @@ Causemos is split into the following modules to support top-down modeling:
 - Causemos recommendation service: https://github.com/uncharted-causemos/wm-curation-recommendation
 - Unstructured extraction pipeline: https://github.com/uncharted-causemos/anansi
 - Structured data pipeline: https://github.com/uncharted-causemos/slow-tortoise`
-License:
+- License:
