@@ -4,7 +4,7 @@ title: DySE
 parent: Top-Down Modeling and HMI
 nav_order: 3
 has_children: false
-has_toc: false
+has_toc: true
 ---
 
 # DySE
