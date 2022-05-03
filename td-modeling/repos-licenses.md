@@ -6,8 +6,8 @@ has_toc: true
 nav_order: 5
 ---
 
-# Top-Down Modeling and HMI
-World Modelers repositories related to top-down modeling/analysis and the human-machine interface
+# Top-Down Modeling Repositories
+World Modelers repositories related to top-down modeling/analysis engines and the aspects of the human-machine interface supporting this functional area
 
 ## Engine Software Components
 
