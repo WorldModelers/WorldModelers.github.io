@@ -11,6 +11,13 @@ has_toc: true
 
 [DySE](https://github.com/pitt-miskov-zivanov-lab/dyse_wm) (Dynamic Systems Explanation) is a framework for studying dynamics in systems representable as networks of interacting modules. 
 
+## Table of Contents
+1. [DySE Simulator](#1-dyse-simulator)
+2. [Sensitivity and Pathway Analysis](#2-sensitivity-and-pathway-analysis)
+   1. [Sensitivity Analysis](#21-sensitivity-analysis)
+   2. [Pathway Analysis](#22-pathway-analysis)
+3. [Citation and References](#citation)
+
 ## 1. DySE Simulator
 
 #### About
