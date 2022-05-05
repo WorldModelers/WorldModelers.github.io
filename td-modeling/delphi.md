@@ -1,16 +1,17 @@
 ---
 layout: default
 title: Delphi
-parent: Top-Down Modeling
+parent: Qualitative Analysis Toolkit
 has_toc: true
 nav_order: 2
 ---
 # Table of Contents
-1. [Delphi Overview](#delphi)
-    1. [Head Nodes](#head-nodes)
-    2. [Editing Edges](#editing-an-edge)
-    3. [Interventions](#interventions)
-    4. [Further Reading](#further-reading)
+- [Table of Contents](#table-of-contents)
+- [Delphi](#delphi)
+  - [Head nodes](#head-nodes)
+  - [Editing an edge](#editing-an-edge)
+  - [Interventions](#interventions)
+  - [Further reading](#further-reading)
  
 # Delphi
 

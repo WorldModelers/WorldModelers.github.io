@@ -1,7 +1,7 @@
 ---
 layout: default
 title: DySE
-parent: Top-Down Modeling
+parent: Qualitative Analysis Toolkit
 nav_order: 3
 has_children: false
 has_toc: true

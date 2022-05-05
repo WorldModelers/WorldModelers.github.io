@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Repository Overview and Licenses
-parent: Top-Down Modeling
+parent: Qualitative Analysis Toolkit
 has_toc: true
 nav_order: 5
 ---
