@@ -1,7 +1,7 @@
 ---
 title: HUME
 has_children: false
-parent: Reading and Assembly
+parent: Corpus Ingestion and Assembly Toolkit
 nav_order: 3
 ---
 # HUME

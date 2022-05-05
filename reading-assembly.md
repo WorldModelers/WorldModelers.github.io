@@ -1,5 +1,5 @@
 ---
-title: Reading and Assembly
+title: Corpus Ingestion and Assembly Toolkit
 has_children: true
 nav_order: 2
 ---

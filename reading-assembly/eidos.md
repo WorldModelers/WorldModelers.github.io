@@ -1,7 +1,7 @@
 ---
 title: Eidos
 has_children: false
-parent: Reading and Assembly
+parent: Corpus Ingestion and Assembly Toolkit
 nav_order: 2
 ---
 # Eidos

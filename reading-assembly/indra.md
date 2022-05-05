@@ -1,7 +1,7 @@
 ---
 title: INDRA World
 has_children: false
-parent: Reading and Assembly
+parent: Corpus Ingestion and Assembly Toolkit
 nav_order: 5
 ---
 # INDRA World
