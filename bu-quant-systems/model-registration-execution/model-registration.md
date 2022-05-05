@@ -2,7 +2,7 @@
 layout: default
 title: Model Registration
 parent: Registering and Running Expert Domain Models
-grand_parent: Bottom Up Quantitative Systems
+grand_parent: Quantitative Analysis Toolkit
 nav_order: 1
 ---
 

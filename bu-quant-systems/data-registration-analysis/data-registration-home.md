@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Registering and Analyzing Structured Data
-parent: Bottom Up Quantitative Systems
+parent: Quantitative Analysis Toolkit
 has_children: true
 ---
 
