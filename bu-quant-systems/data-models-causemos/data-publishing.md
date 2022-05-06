@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Data Publishing
-parent: Registering and Analyzing Structured Data
+parent: Using Data and Models in Causemos
 grand_parent: Quantitative Analysis Toolkit
-nav_order: 2
+nav_order: 1
 ---
 
 # Coming Soon

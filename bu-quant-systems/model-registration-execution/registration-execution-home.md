@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Registering and Running Expert Domain Models
+title: Expert Domain Models
 parent: Quantitative Analysis Toolkit
 has_children: true
 ---

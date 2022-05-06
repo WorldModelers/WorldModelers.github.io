@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Repository Overview and Licenses
-parent: Registering and Running Expert Domain Models
+parent: Expert Domain Models
 grand_parent: Quantitative Analysis Toolkit
-nav_order: 5
+nav_order: 3
 ---
 
 # Coming Soon
 
-Dojo and Causemos repositories for registration and execution of expert domain models in the World Modelers ecosystem
+Dojo repositories for registration and execution of expert domain models in the World Modelers ecosystem

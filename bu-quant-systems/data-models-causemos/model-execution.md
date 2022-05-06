@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Running Models in Causemos
-parent: Registering and Running Expert Domain Models
+parent: Using Data and Models in Causemos
 grand_parent: Quantitative Analysis Toolkit
-nav_order: 3
+nav_order: 4
 ---
 
 # Coming Soon

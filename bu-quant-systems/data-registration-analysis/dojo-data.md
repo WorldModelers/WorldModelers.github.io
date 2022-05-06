@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Registering Data in Dojo
-parent: Registering and Analyzing Structured Data
+parent: Structured Data
 grand_parent: Quantitative Analysis Toolkit
 nav_order: 1
 ---

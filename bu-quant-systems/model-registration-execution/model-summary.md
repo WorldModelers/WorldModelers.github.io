@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Models Overview
-parent: Registering and Running Expert Domain Models
+parent: Expert Domain Models
 grand_parent: Quantitative Analysis Toolkit
-nav_order: 4
+nav_order: 2
 has_children: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Model Registration
-parent: Registering and Running Expert Domain Models
+parent: Expert Domain Models
 grand_parent: Quantitative Analysis Toolkit
 nav_order: 1
 ---

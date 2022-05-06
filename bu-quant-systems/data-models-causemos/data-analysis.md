@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Analyzing Structured Data in Causemos
-parent: Registering and Analyzing Structured Data
+parent: Using Data and Models in Causemos
 grand_parent: Quantitative Analysis Toolkit
-nav_order: 3
+nav_order: 2
 ---
 
 # Coming Soon
