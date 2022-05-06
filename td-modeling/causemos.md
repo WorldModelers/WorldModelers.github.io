@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Causemos
+title: Qualitative Analysis in Causemos
 parent: Qualitative Analysis Toolkit
 has_toc: true
 nav_order: 1
