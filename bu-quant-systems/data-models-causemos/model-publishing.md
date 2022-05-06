@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Model Publishing in Causemos
+title: Model Publishing
 parent: Using Data and Models in Causemos
 grand_parent: Quantitative Analysis Toolkit
 nav_order: 3

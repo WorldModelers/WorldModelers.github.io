@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Repository Overview and Licenses
+title: Repositories and Licenses
 parent: Qualitative Analysis Toolkit
 has_toc: true
 nav_order: 5
@@ -16,18 +16,24 @@ World Modelers repositories related to top-down modeling/analysis engines and th
 University of Arizona's top-down modeling engine. 
 - Repository: See [https://ml4ai.github.io/delphi/index.html](https://ml4ai.github.io/delphi/index.html) for more information.
 - License: Apache, see [https://ml4ai.github.io/delphi/index.html#license-and-funding](https://ml4ai.github.io/delphi/index.html#license-and-funding)
+- To run Delphi independently as a standalone engine without the HMI, here are the installation/configuration instructions: PLACEHOLDER
+- To run Delphi with the Causemos HMI, here are the installation/configuration instructions: PLACEHOLDER, include all repositories needed
 
 ### DySE
 
 University of Pittsburgh's top-down modeling engine. 
 - Repository: See [https://github.com/pitt-miskov-zivanov-lab/dyse_wm](https://github.com/pitt-miskov-zivanov-lab/dyse_wm) for more information.
 - License: MIT, see [https://github.com/pitt-miskov-zivanov-lab/dyse_wm/blob/main/LICENSE.txt](https://github.com/pitt-miskov-zivanov-lab/dyse_wm/blob/main/LICENSE.txt)
+- To run DySE independently as a standalone engine without the HMI, here are the installation/configuration instructions: PLACEHOLDER
+- To run DySE with the Causemos HMI, here are the installation/configuration instructions: PLACEHOLDER, include all repositories needed
 
 ### Sensei
 
 Jataware's top-down modeling engine. 
 - Repository: See [https://github.com/dojo-modeling/sensei](https://github.com/dojo-modeling/sensei) for more information.
 - License:
+- To run Sensei independently as a standalone engine without the HMI, here are the installation/configuration instructions: PLACEHOLDER
+- To run Sensei with the Causemos HMI, here are the installation/configuration instructions: PLACEHOLDER, include all repositories needed
 
 
 ## HMI Software Components

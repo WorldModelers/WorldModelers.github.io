@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Repository Overview and Licenses
+title: Repositories and Licenses
 parent: Expert Domain Models
 grand_parent: Quantitative Analysis Toolkit
 nav_order: 3

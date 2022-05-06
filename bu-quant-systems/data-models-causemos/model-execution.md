@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Running Models in Causemos
+title: Running Models
 parent: Using Data and Models in Causemos
 grand_parent: Quantitative Analysis Toolkit
 nav_order: 4
