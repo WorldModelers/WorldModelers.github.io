@@ -11,6 +11,7 @@ nav_order: 2
   - [Head nodes](#head-nodes)
   - [Editing an edge](#editing-an-edge)
   - [Interventions](#interventions)
+  - [Running locally without the HMI](#running-locally-without-the-HMI)
   - [Further reading](#further-reading)
  
 # Delphi
@@ -53,6 +54,37 @@ Therefore, the analyst should keep in mind that freezing edges initiate a ripple
 ## Interventions
 
 When an analyst sets the values of indicators at specific time steps, Delphi honors them and outputs those exact values at those time steps. Such changes propagate to downstream nodes, and their predictions will change accordingly.
+
+
+## Running locally without the HMI
+
+You must have [Docker](https://www.docker.com) installed.
+
+1. Clone the Delphi git repository: [https://github.com/ml4ai/delphi](https://github.com/ml4ai/delphi).
+2. Open a command prompt (a terminal) and navigate into the **data** directory within the Delphi root directory. 
+3. Download the Delphi database into the **data** directory by typing `curl -O http://vanga.sista.arizona.edu/delphi_data/delphi.db` in the terminal.
+4. In the terminal, navigate into the Delphi root directory.
+5. Run the Delphi rest server by typing `docker-compose up --build` in the terminal.
+   - This will set up Delphi and run the Delphi REST server on port localhost:8123.
+   - When this step is successful, you could access Delphi through its [REST API](https://github.com/uncharted-causemos/docs/blob/f860a5a24db30677ce65a917f3defb330d438933/td-models/api.yml).
+   - You could interact with the Delphi REST server by using the following commands executed on another terminal window.
+6. Run `curl localhost:8123/status` to check whether the Delphi REST server is running correctly.
+   - You should see an output similar to `The Delphi REST API was started on 896fa348cc11 in normal mode at UTC 2022-05-10 02:16:33:026`.
+7. To create and train a model run: `curl -X POST http://localhost:8123/create-model -d @<create-model-specification-file-name>.json`
+   - The **create model specification json file** should be formatted according to the [REST API Specification](https://github.com/uncharted-causemos/docs/blob/f860a5a24db30677ce65a917f3defb330d438933/td-models/api.yml).
+   - [An example create model specification json file](https://github.com/ml4ai/delphi/blob/c101dfd4d98cdec0bae089704949190d33ed1c0c/tests/wm/scripts/3nodes_model.json)
+8. To check the model training status run: `curl http://localhost:8123/models/<model-id>/training-progress`
+   - The **model id** is specified in the **<create-model-specification-file-name>.json** model specification file used to create the model.
+9. To check the model status run: `curl http://localhost:8123/models/<model-id>`
+10. To create an experiment run: `curl -X POST http://localhost:8123/models/<model-id>/experiments -d @<create-experiment-specification-file-name>.json`
+    - The **create experiment specification json file** should be formatted according to the [REST API Specification](https://github.com/uncharted-causemos/docs/blob/f860a5a24db30677ce65a917f3defb330d438933/td-models/api.yml).
+    - This call returns an **experiment id** that you should provide when you are querying about an experiment.
+    - [An example create experiment specification json file](https://github.com/ml4ai/delphi/blob/c101dfd4d98cdec0bae089704949190d33ed1c0c/tests/wm/scripts/3nodes_projection.json)
+11. To query the status of an experiment or the experiment results run: `curl http://localhost:8123/models/<model-id>/experiments/<experiment-id>`
+12. To freeze edge weights as a specific value and polarity run: `curl -X POST http://localhost:8123/models/<model-id>/edit-indicators -d @<edit-edge-specification-file-name>.json`
+    - The **edit edge specification json file** should be formatted according to the [REST API Specification](https://github.com/uncharted-causemos/docs/blob/f860a5a24db30677ce65a917f3defb330d438933/td-models/api.yml).
+    - [An example edit edges specification json file](https://github.com/ml4ai/delphi/blob/c101dfd4d98cdec0bae089704949190d33ed1c0c/tests/wm/scripts/3nodes_2_edges.json)
+
 
 ## Further reading
 
