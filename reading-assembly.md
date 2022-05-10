@@ -13,6 +13,11 @@ This document describes usage modes that are explicitly supported and documented
   <img src="images/workflows.png" width="500">
 </p>
 
+In addition to the documentations linked to below, we created walkthrough
+tutorials on a set of test documents made available publicly:
+
+- [Workflow 2 tutorial](reading-assembly/w2_tutorial.html#w2)
+
 ## Documentation by Workflow
 
 <a id="w1"></a>
