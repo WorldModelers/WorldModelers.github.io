@@ -29,7 +29,7 @@ University of Pittsburgh's top-down modeling engine.
 
 ### Sensei
 
-Jataware's top-down modeling engine. 
+[Jataware](https://jataware.com/)'s top-down modeling engine. 
 - Repository: See [https://github.com/dojo-modeling/sensei](https://github.com/dojo-modeling/sensei) for more information.
 - License: MIT, see [https://github.com/dojo-modeling/sensei/blob/main/LICENSE](https://github.com/dojo-modeling/sensei/blob/main/LICENSE)
 - To run Sensei independently as a standalone engine without the HMI, here are the installation/configuration instructions: PLACEHOLDER
