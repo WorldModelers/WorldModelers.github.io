@@ -32,8 +32,7 @@ University of Pittsburgh's top-down modeling engine.
 [Jataware](https://jataware.com/)'s top-down modeling engine. 
 - Repository: See [https://github.com/dojo-modeling/sensei](https://github.com/dojo-modeling/sensei) for more information.
 - License: MIT, see [https://github.com/dojo-modeling/sensei/blob/main/LICENSE](https://github.com/dojo-modeling/sensei/blob/main/LICENSE)
-- To run Sensei independently as a standalone engine without the HMI, here are the installation/configuration instructions: PLACEHOLDER
-- To run Sensei with the Causemos HMI, here are the installation/configuration instructions: PLACEHOLDER, include all repositories needed
+- Running Sensei independently as a standalone engine and with the Causemos HMI requires the same setup steps, which are available [here](https://github.com/dojo-modeling/sensei#installation-and-setup).
 
 
 ## HMI Software Components
