@@ -1,5 +1,5 @@
 ---
-title: Corpus Ingestion and Assembly Toolkit
+title: Causal knowledge extraction and Assembly Toolkit
 has_children: true
 nav_order: 2
 ---
@@ -7,38 +7,84 @@ nav_order: 2
 # Overview
 ## World Modelers document management / reading / assembly / HMI workflows
 
-This document describes usage modes that are explicitly supported and documented as workflow templates (W1-5 below). While these templates don’t cover every conceivable combination and usage mode, they are likely to be relevant for typical use cases. Customizations to the ontology and the usage of associated tools cuts across all of these workflows, and can in principle be relevant for any of them, therefore, these are documented separately.
+Here we describe how to set up and run the systems responsible for
+document corpus ingestion, machine reading, knowledge assembly, and human-machine
+interface (HMI)-based exploration.
+
+First, we describe running the full integrated system as a set of
+interconnected Docker containers. Once running, this integrated system
+allows for uploading documents through a web-based UI, having machine-reading
+systems process these documents, and then creating an assembled knowledge
+base that can be loaded into the CauseMos HMI. From the assembled knowledge
+base, individual projects can be initiated and maintained. Uploading new
+documents for a given project is also supported, with new causal knowledge
+extracted from the documents incrementally added to the project.
+
+In addition to the integrated system, we also document and provide
+tutorials for running component technologies in simpler, more limited
+workflows (W1-3). These workflows can be useful for prototyping changes
+to component technologies before moving onto full integration, or for
+situations where only a subset of component systems are needed.
 
 <p align="center">
   <img src="images/workflows.png" width="500">
 </p>
 
-In addition to the documentations linked to below, we created walkthrough
-tutorials on a set of test documents made available publicly:
+## Step-by-step tutorials
+
+This section contains tutorials that each describe one specific
+workflow on a set of publicly available sample documents. Users can follow
+these tutorials step by step as a starting point and adapt them to
+their own use cases.
 
 - [Integrated workflow](reading-assembly/integrated_tutorial.md)
-- [Workflow 2 tutorial](reading-assembly/w2_tutorial.html#w2)
 
-## Documentation by Workflow
+  In this tutorial, we provide a step-by-step example of running the integrated
+  system as a set of Docker containers, uploading a handful of documents
+  for processing, and then examining the resulting causal knowledge
+  base extracted and assembled from these documents.
 
+- [Reading and knowledge assembly tutorial](reading-assembly/w2_tutorial.html#w2)
+
+  In this tutorial, we provide a step-by-step example of running
+  a machine reading system on a set of sample documents and then running
+  INDRA assembly on the outputs of the system.
+
+## Running the integrated system
+
+
+## Sub-system workflows
 <a id="w1"></a>
 ### W1. Reading only
-In this usage mode the goal is to perform information extraction from a set of input documents that are manually compiled and brought into a form that one of the reading systems takes as input (e.g., a folder with txt files). This usage mode doesn't involve document management through DART or multi-reader integration/assembly through INDRA, but rather, meaning that users are responsible for their own downstream processing of reader outputs and derived analysis.
 
-Systems used:
-  * Readers: any of [Eidos](reading-assembly/eidos.html#w1), [HUME](reading-assembly/hume.html#w1), or [Sofia](reading-assembly/sofia.html#w1)
+Machine-reading systems can be run independent of the integrated 
+World Modelers system. In this case, users are responsible for preparing
+input documents in an appropriate form and processing reading system
+outputs for downstream usage.
+
+The following pages provide detailed instructions for running each reading
+system in a reading-only workflow:
+
+  * [Eidos](reading-assembly/eidos.html#w1)
+  * [HUME](reading-assembly/hume.html#w1)
+  * [Sofia](reading-assembly/sofia.html#w1)
 
 <a id="w2"></a>
 ### W2. Reading + integration/assembly
-In this usage mode, the goal is to perform information extraction on a set of input documents and then use INDRA to benefit from some combination of (i) multi-reader integration
-(ii) knowledge assembly functionalities
-(iii) standardized representation of reader outputs
-(iv) standard programmatic APIs for interfacing with readers and their outputs.
-The user in this mode is again responsible for document gathering and preparing inputs for reading but may use INDRA as a wrapper around calling one or more reading systems. The user is expected to then either use assembled INDRA Statements as objects or in a JSON-serialized form for their own downstream analysis.
+
+Running multiple reading systems on the same set of documents can provide
+increased coverage and - through exploiting redundancy - a more reliable
+knowledge base. INDRA World provides a programmatic interface for
+working with reader outputs, combining extractions in a standardized
+form, and running a variety of configurable processing and filtering
+components to create a coherent knowledge base. This section describes
+the usage of these components independent of the integrated system.
 
 Systems used:
   * Readers: one or more of [Eidos](reading-assembly/eidos.html#w2), [HUME](reading-assembly/hume.html#w2), or [Sofia](reading-assembly/sofia.html#w2)
   * Integration/assembly: [INDRA](reading-assembly/indra.html#w2)
+
+A step-by-step tutorial
 
 <a id="w3"></a>
 ### W3. Document management + reading + integration/assembly
@@ -69,7 +115,7 @@ Systems used:
   * Integration/assembly: [INDRA](reading-assembly/indra.html#w5)
   * HMI: [Causemos](reading-assembly/causemos.html#w5)
 
-## Documentation by Component
+## Component-specific documentation
 
 * Readers
   * [Eidos](reading-assembly/eidos.html)
