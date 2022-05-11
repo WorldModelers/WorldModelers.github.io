@@ -24,7 +24,7 @@ University of Arizona's top-down modeling engine.
 University of Pittsburgh's top-down modeling engine. 
 - Repository: See [https://github.com/pitt-miskov-zivanov-lab/dyse_wm](https://github.com/pitt-miskov-zivanov-lab/dyse_wm) for more information.
 - License: MIT, see [https://github.com/pitt-miskov-zivanov-lab/dyse_wm/blob/main/LICENSE.txt](https://github.com/pitt-miskov-zivanov-lab/dyse_wm/blob/main/LICENSE.txt)
-- To run DySE independently as a standalone engine without the HMI, here are the installation/configuration instructions: PLACEHOLDER
+- To run DySE independently as a standalone engine without the HMI, here are the installation/configuration instructions: [https://github.com/pitt-miskov-zivanov-lab/dyse_wm/blob/main/README.md](https://github.com/pitt-miskov-zivanov-lab/dyse_wm/blob/main/README.md)
 - To run DySE with the Causemos HMI, here are the installation/configuration instructions: PLACEHOLDER, include all repositories needed
 
 ### Sensei
