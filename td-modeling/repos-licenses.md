@@ -16,8 +16,8 @@ World Modelers repositories related to top-down modeling/analysis engines and th
 University of Arizona's top-down modeling engine. 
 - Repository: See [https://ml4ai.github.io/delphi/index.html](https://ml4ai.github.io/delphi/index.html) for more information.
 - License: Apache, see [https://ml4ai.github.io/delphi/index.html#license-and-funding](https://ml4ai.github.io/delphi/index.html#license-and-funding)
-- To run Delphi independently as a standalone engine without the HMI, here are the installation/configuration instructions: PLACEHOLDER
-- To run Delphi with the Causemos HMI, here are the installation/configuration instructions: PLACEHOLDER, include all repositories needed
+- To run Delphi independently as a standalone engine without the HMI, here are the installation/configuration instructions: [https://worldmodelers.com/td-modeling/delphi.html#running-locally-without-the-hmi](https://worldmodelers.com/td-modeling/delphi.html#running-locally-without-the-hmi)
+- To run Delphi with the Causemos HMI, here are the installation/configuration instructions: [https://docs.google.com/presentation/d/19PeNAoCIxNCQxXAZNV4Gn4kMVPCAJKYlLXQCJ6V2SZM/edit#slide=id.g8c51928f8f_0_200](https://docs.google.com/presentation/d/19PeNAoCIxNCQxXAZNV4Gn4kMVPCAJKYlLXQCJ6V2SZM/edit#slide=id.g8c51928f8f_0_200)
 
 ### DySE
 
