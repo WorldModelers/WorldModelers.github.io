@@ -11,7 +11,7 @@ nav_order: 2
   - [Head nodes](#head-nodes)
   - [Editing an edge](#editing-an-edge)
   - [Interventions](#interventions)
-  - [Running locally without the HMI](#running-locally-without-the-HMI)
+  - [Running locally without the HMI](#running-locally-without-the-hmi)
   - [Further reading](#further-reading)
  
 # Delphi
