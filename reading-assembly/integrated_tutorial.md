@@ -68,7 +68,7 @@ We follow these steps to upload and publish the ontology we selected:
 1. In the menu, select `Concepts Explorer`
 2. Click `Choose Ontology File` and then `Upload Ontology`
 3. Select the file we saved to `/data/ontology.yml`
-4. Click the `Stage current` button, then click `Proceeed`
+4. Click the `Stage current` button, then click `Proceed`
 5. Click the `Publish staged` button, the click `Proceed`
 
 
@@ -94,7 +94,7 @@ reading) for assembly into a causal knowledge base.
 To do this, go to http://localhost:9444/dashboard. Here, without
 changing anything in the form, click on "Find reader output records".
 We will wait until we have outputs for all 9 processed documents available from
-both the Eidos and Hume systems (you can click on "Find reader output records".
+both the Eidos and Hume systems (you can click on "Find reader output records"
 any time to check again for the status of reading). It should
 take about 30 minutes for all reading to be ready.
 
@@ -126,18 +126,23 @@ Below, we find the top 5 influencers of food security
 
 ```python
 from indra.statements import stmts_from_json_file
+
 # Load statements from JSON-L
 stmts = stmts_from_json_file('/data/indra/tutorial/statements.json', format='jsonl')
+
 # Sort by evidence
 stmts = sorted(stmts, key=lambda x: len(x.evidence), reverse=True)
+
 # Find Influence statements where the object (i.e., effect) of the statement
 # has the compositional grounding for food security per our ontology
 stmts_fs = [s for s in stmts
             if s.obj.concept.get_grounding()[1][0] == 'wm/concept/goods/food'
             and s.obj.concept.get_grounding()[1][2] == 'wm/property/security']
-# Now print the top 5 subject
+
+# Now print the top 5 subjects
 for stmt in stmts_fs:
     print(stmt.obj.concept.name)
+
 # This prints the following:
 # attack
 # shocks
