@@ -16,6 +16,7 @@ This document describes usage modes that are explicitly supported and documented
 In addition to the documentations linked to below, we created walkthrough
 tutorials on a set of test documents made available publicly:
 
+- [Integrated workflow](reading-assembly/integrated_tutorial.md)
 - [Workflow 2 tutorial](reading-assembly/w2_tutorial.html#w2)
 
 ## Documentation by Workflow
