@@ -15,18 +15,17 @@ requires  at least 64 GB or RAM.
 
 ## 1. Download input documents
 
-First, we need to prepare a set of input documents to run reading on. Depending
-on the reading system(s) used, these can be plain text files or CDR files
-containing both the plain text of the document and some metadata. In this
-example, we will use a set of 423 documents represented as CDRs, available
-publicly on Github.
+First, we need to prepare a set of input documents to run reading on. In this
+example, we will use a set of documents available publicly on Github as
+PDFs. These documents can be cloned from Github as follows:
 
 ```bash
 cd /data
 git clone https://github.com/twosixlabs-dart/world-modelers-demo-docs.git
 ```
 
-The documents will now be in the `/data/world-modelers-demo-docs/cdrs` folder.
+The raw (unprocessed) documents will now be in the
+`/data/world-modelers-demo-docs/raw_docs` folder.
 
 ## 2. Run the integrated system
 
