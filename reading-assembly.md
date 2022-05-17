@@ -38,7 +38,7 @@ workflow on a set of publicly available sample documents. Users can follow
 these tutorials step by step as a starting point and adapt them to
 their own use cases.
 
-- [Integrated workflow tutorial](reading-assembly/integrated_tutorial.md)
+- [Integrated workflow tutorial](reading-assembly/integrated_tutorial.html)
 
   In this tutorial, we provide a step-by-step example of running the integrated
   system as a set of Docker containers, uploading a handful of documents
