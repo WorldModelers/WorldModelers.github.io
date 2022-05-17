@@ -1,7 +1,7 @@
 ---
 title: Integrated system tutorial
 has_children: false
-parent: Corpus Knowledge Extraction and Assembly Toolkit
+parent: Causal Knowledge Extraction and Assembly Toolkit
 nav_order: 7
 ---
 

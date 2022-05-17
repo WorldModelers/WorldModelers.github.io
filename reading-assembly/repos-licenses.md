@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Repository Overview and Licenses
-parent: Corpus Knowledge Extraction and Assembly Toolkit
+parent: Causal Knowledge Extraction and Assembly Toolkit
 nav_order: 10
 has_toc: true
 ---
