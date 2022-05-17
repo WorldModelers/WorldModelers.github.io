@@ -19,6 +19,7 @@ for managing and developing the ontologies used by the readers to ground causal 
 
 The DART code repositories [can be found here](https://github.com/twosixlabs-dart).
 
+<a id="running-dart"></a>
 ## Running DART-In-A-Box
 
 All of the  workflows described below require running the DART pipeline along with the available reader technologies 

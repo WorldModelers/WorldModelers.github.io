@@ -70,6 +70,8 @@ base from INDRA World can be loaded into Causemos for exploration. Causemos also
 allows uploading new documents and incrementally adding them to the causal
 knowledgebase during runtime.
 
+Options for running the integrated system are described [here](reading-assembly/dart.html#running-dart).
+
 Systems used:
 * Document and ontology management: [DART](reading-assembly/dart.html#w5)
 * Readers: [Eidos](reading-assembly/eidos.html#w5), [HUME](reading-assembly/hume.html#w5), [Sofia](reading-assembly/sofia.html#w5)
