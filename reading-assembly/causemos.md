@@ -1,7 +1,7 @@
 ---
 title: Causemos
 has_children: false
-parent: Corpus Ingestion and Assembly Toolkit
+parent: Corpus Knowledge Extraction and Assembly Toolkit
 nav_order: 6
 ---
 # Causemos

@@ -1,5 +1,5 @@
 ---
-title: Causal knowledge extraction and Assembly Toolkit
+title: Causal Knowledge Extraction and Assembly Toolkit
 has_children: true
 nav_order: 2
 ---

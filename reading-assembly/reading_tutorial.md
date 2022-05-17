@@ -1,4 +1,10 @@
-# Tutorial
+---
+title: Reading only tutorial
+has_children: false
+parent: Corpus Knowledge Extraction and Assembly Toolkit
+nav_order: 9
+---
+# Reading only tutorial
 In this example, we provide step-by-step instructions for running the Hume machine reading system on a set of sample documents.
 
 In the steps below, we assume that our working folder is `runtime`, that this folder already exists and all work is done under this path. This is arbitrary and can be replaced by another appropriate local path.

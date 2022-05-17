@@ -1,3 +1,9 @@
+---
+title: Reading and knowledge assembly tutorial
+has_children: false
+parent: Corpus Knowledge Extraction and Assembly Toolkit
+nav_order: 8
+---
 # Tutorial: Reading and knowledge assembly
 
 In this tutorial, we provide a step-by-step example of running

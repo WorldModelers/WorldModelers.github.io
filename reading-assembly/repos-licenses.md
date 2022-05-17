@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Repository Overview and Licenses
-parent: Corpus Ingestion and Assembly Toolkit
-nav_order: 7
+parent: Corpus Knowledge Extraction and Assembly Toolkit
+nav_order: 10
 has_toc: true
 ---
 

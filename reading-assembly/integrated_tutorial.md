@@ -1,3 +1,10 @@
+---
+title: Integrated system tutorial
+has_children: false
+parent: Corpus Knowledge Extraction and Assembly Toolkit
+nav_order: 7
+---
+
 # Tutorial: Integrated system from documents to a causal knowledge base
 
 In this tutorial, we provide step-by-step instructions for how to
