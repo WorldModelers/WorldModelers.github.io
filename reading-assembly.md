@@ -38,7 +38,7 @@ workflow on a set of publicly available sample documents. Users can follow
 these tutorials step by step as a starting point and adapt them to
 their own use cases.
 
-- [Integrated workflow](reading-assembly/integrated_tutorial.md)
+- [Integrated workflow tutorial](reading-assembly/integrated_tutorial.md)
 
   In this tutorial, we provide a step-by-step example of running the integrated
   system as a set of Docker containers, uploading a handful of documents
@@ -59,19 +59,16 @@ their own use cases.
 
 ## Running the integrated system
 
-This workflow builds on enables users to add their own documents during runtime
-through Causemos. This requires DART, one or more readers, and INDRA World to 
-be running as services.
-
-In this integrate workflow, the DART system is used for managing documents and using a 
-standardized interface between DART and the reading systems. This avoids having 
-to manually prepare input files for reading. DART also makes available
-a UI for interactive ontology management and extension. Reader output
-is integrated and assembled (through a set of normalization, processing and
-filtering steps) by INDRA World. Finally, the assembled knowledge base
-from INDRA World can be loaded into Causemos for exploration. Causemos
-also allows uploading new documents and incrementally adding them to the
-causal knowledgebase during runtime.
+In this integrated workflow, system components are running as a set of
+network-linked Dockerized containers. The DART system is used for managing
+documents and using a standardized interface between DART and the reading
+systems. This avoids having to manually prepare input files for reading. DART
+also makes available a UI for interactive ontology management and extension.
+Reader output is integrated and assembled (through a set of normalization,
+processing and filtering steps) by INDRA World. Finally, the assembled knowledge
+base from INDRA World can be loaded into Causemos for exploration. Causemos also
+allows uploading new documents and incrementally adding them to the causal
+knowledgebase during runtime.
 
 Systems used:
 * Document and ontology management: [DART](reading-assembly/dart.html#w5)
