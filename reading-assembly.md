@@ -5,6 +5,37 @@ nav_order: 2
 ---
 
 # Overview
+
+![](images/causemos/image39.jpg)
+
+To understand all the influences in complex systems such as food
+security, analysts must typically undertake time-consuming literature
+reviews across multiple domains. The World Modelers system mitigates
+this need by leveraging machine reading to automatically process
+thousands of documents from the relevant literature. In processing the
+documents, the system extracts causal relationships from the text and
+stores them in a knowledge base. Analysts can use the knowledge base to
+provide evidence that backs their mental models of complex systems and
+augment those models with suggested relationships.
+
+The World Modelers corpus ingestion and assembly pipeline involves the
+following components and steps:
+
+1.  [DART](reading-assembly/dart.html) ingests a relevant set of documents, extracting
+    text and metadata and applying other analytics.
+
+2.  [Eidos](reading-assembly/eidos.html), [Hume](reading-assembly/hume.html), [Sofia](reading-assembly/sofia.html) readers
+    extract causal assertions from the text and ground the
+    objects/subjects to ontology.
+
+3.  [INDRA](reading-assembly/indra.html) assembles (normalizes and dedupes) the results,
+    computes quality metrics, and applies noise filters.
+
+4.  The final results are added to the knowledge base available in
+    [Causemos](reading-assembly/causemos.html) and can be associated with a new analysis
+    project. During analysis, analysts can upload their own documents
+    to add to the existing KB.
+
 ## World Modelers document management / reading / assembly / HMI workflows
 
 Here we describe how to set up and run the systems responsible for

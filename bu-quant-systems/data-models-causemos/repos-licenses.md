@@ -3,7 +3,7 @@ layout: default
 title: Repositories and Licenses
 parent: Using Data and Models in Causemos
 grand_parent: Quantitative Analysis Toolkit
-nav_order: 5
+nav_order: 7
 ---
 
 # Coming Soon

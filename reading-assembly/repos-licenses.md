@@ -64,6 +64,41 @@ CSerif contains C/C++ code for pre-reading of texts into BBN's SerifXML format. 
 - Documentation: [https://github.com/BBN-E/serif/blob/master/README.md](https://github.com/BBN-E/serif/blob/master/README.md)
 - Stable version: [https://github.com/BBN-E/serif](https://github.com/BBN-E/serif)
 
+### Causemos
+
+To load data into Causemos, you need the following utilities:
+
+- [atlas](https://github.com/uncharted-causemos/atlas) for setting up the initial mapping and analyzers.
+- [anansi](https://github.com/uncharted-causemos/anansi), the knowledge data loader.
+
+In addition, Causemos data loader requires a running instance of
+Elasticsearch (version 7+) and Python environment (version 3+).
+
+1.  Install the ElasticSearch mappings:
+
+    a. `ES=<host:port> python es_mapper.py`
+
+2.  Download and extract the following geolocation datasets:
+
+    a. http://download.geonames.org/export/dump/allCountries.zip
+    
+    b. [http://clulab.cs.arizona.edu/models/gadm_woredas.txt](http://clulab.cs.arizona.edu/models/gadm_woredas.txt)
+
+3.  Under anansi, run geo loader script. Note: this will take a few
+    minutes.
+
+    a. `ES=<es_url> ES_USER=<user> ES_PASSWORD=<password> python
+         geo_loader.py`
+
+4.  Start loading the corpus datasets. Here it is assumed you have
+    access to the INDRA dataset and the DART CDR dataset. In most
+    cases, SOURCE_ES and TARGET_ES should have the same values. This
+    may take some time to complete if the datasets are of significant
+    size. On a 150K INDRA dataset the processing time can be about
+    20--25 minutes.
+
+    `#!/usr/bin/env bash`
+
 ### Sofia
 
 - Repository: [https://github.com/spilioeve/WM-src](https://github.com/spilioeve/WM-src)
