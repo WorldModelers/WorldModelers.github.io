@@ -35,8 +35,6 @@ soil viability, market instability, and physical security.
 
 ![Modeler and analyst workflows across the various World Modelers systems](images/causemos/image26.jpg)
 
-Modeler and analyst workflows across the various World Modelers systems
-
 ## Causemos
 
 Causemos is a collaborative analytical platform, developed by

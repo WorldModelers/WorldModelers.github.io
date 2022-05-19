@@ -16,12 +16,12 @@ Some metadata about the Knowledge Base is visible on the Project page:
 name, number of documents, and number of causal relationships extracted
 from these documents.
 
-![Knowledge Base metadata on the Project page](images/causemos/image23.jpg)
+![Knowledge Base metadata on the Project page](../images/causemos/image23.jpg)
 
 Analysts can upload additional documents to the project knowledge base
 and use the extracted relations.
 
-![Analysts can upload documents such as PDFs to the Knowledge Base and then filter the Knowledge Base Explorer to see causal statements extracted from them.](images/causemos/image19.jpg)
+![Analysts can upload documents such as PDFs to the Knowledge Base and then filter the Knowledge Base Explorer to see causal statements extracted from them.](../images/causemos/image19.jpg)
 
 # Causemos
 Causemos is the main HMI for the World Modelers program, built and maintained by Uncharted Software.

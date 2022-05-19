@@ -26,4 +26,4 @@ values. In the new-runs mode, markers can be added on model parameters,
 causing potential model scenarios to be generated, which may then be
 reviewed prior to the actual execution.
 
-![New Model Run for Locust Presence.](images/causemos/image36.jpg)
+![New Model Run for Locust Presence.](../../images/causemos/image36.jpg)
