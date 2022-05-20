@@ -51,3 +51,12 @@ Causemos is split into the following modules to support top-down modeling:
 - Unstructured extraction pipeline: [https://github.com/uncharted-causemos/anansi](https://github.com/uncharted-causemos/anansi)
 - Structured data pipeline: [https://github.com/uncharted-causemos/slow-tortoise](https://github.com/uncharted-causemos/slow-tortoise)
 - License:
+
+#### Installation
+
+Causemos requires:
+
+- Elasticsearch with compatible dataset ingested (See [Corpus Ingestion
+  and Assembly](../reading-assembly.html))
+- At least one working inference engine, either external or hosted
+  locally
