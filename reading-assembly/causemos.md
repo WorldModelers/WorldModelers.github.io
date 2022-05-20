@@ -23,58 +23,59 @@ and use the extracted relations.
 
 ![Analysts can upload documents such as PDFs to the Knowledge Base and then filter the Knowledge Base Explorer to see causal statements extracted from them.](../images/causemos/image19.jpg)
 
-# Causemos
-Causemos is the main HMI for the World Modelers program, built and maintained by Uncharted Software.
-It is an ecosystem that consists of Causemos web application plus a suite of services and utilities. The essential ones for handling unstructured data are:
-- Atlas [Initial setup, schemas and mappings](https://github.com/uncharted-causemos/atlas)
-- Anansi [Knowledge ingestion and incremental assembly](https://github.com/uncharted-causemos/anansi)
-- Causemos [Causemos web app](https://github.com/uncharted-causemos/causemos)
 
-BYOD (Bring Your Own Documents, for workflow W5) - Requires the infrastructure parts:
-- [Causemos clustering infrastructure](https://github.com/uncharted-causemos/slow-tortoise)
-
-Recommendation/curation - optional:
-- [Recommendation service](https://github.com/uncharted-causemos/wm-curation-recommendation)
-
-For running and using Causemos, the documentation can be found in [TopDownModelingAndHMI](https://github.com/WorldModelers/TopDownModelingAndHMI)
-
-## Workflows
+# Workflows
 
 <a id="w4"></a>
-### [W4](index.html#w4) Document management + reading + integration/assembly + HMI
-
+## [W4](index.html#w4) Document management + reading + integration/assembly + HMI
 In this workflow, Causemos ingests, combines and enriches an INDRA statements dataset and a DART CDR dataset to create a new Knowledge Base dataset.
 
-
-#### Initial setup
-Ensure you have ElasticSearch setup and have the mappings properly as per [atlas](https://github.com/uncharted-causemos/atlas). 
-
-Install mappings.
-
-```
-ES=<host:port> python es_mapper.py
-```
+Here is an abridged and lightweight version of using Causemos as a knowledge explorer, for more detail on a complete Causemos install please consult the [full documentation](https://github.com/uncharted-causemos/quickstart#loading-knowledge-data).
 
 
-#### Running data ingestion
-Perform a one-time data load of gelocation references, this upserts into a `geo` index. Per the documentation in the script, you will need to download and extract from:
+Start an ElasticSearch instance
 
 ```
-http://download.geonames.org/export/dump/allCountries.zip
-http://clulab.cs.arizona.edu/models/gadm_woredas.txt
+docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 -it docker.elastic.co/elasticsearch/elasticsearch:7.17.3
 ```
 
-Once extracted, run
+Load index mappings
 
 ```
-ES=<es_url> ES_USER=<user> ES_PASSWORD=<password> python geo_loader.py
+git clone git@github.com:uncharted-causemos/atlas.git
+
+cd atlas
+
+ES=<elastic_url> python ./es_mapper.py
 ```
 
-Assume you have INDRA and DART datasets in the file system, the ingestion process can be kicked off with the following snippet.
 
-Note: For all intents and purposes here, SOURCE and TARGET should have the same values.
+To start Causemos with knowledge explorer 
 
-Note: DART_DATA is expected to be in JSONL format, one CDR per line.
+```
+# 1. Clone quick start
+git clone git@github.com:uncharted-causemos/quickstart.git
+
+cd app-kb
+
+# 2. Update configuration files under env
+
+# 3. Start docker
+docker-compose up
+```
+Causemos should be available on http://localhost:3003
+
+
+Then to load data into Causemos
+
+```
+# Clone knowledge pipeline
+git clone git@github.com:uncharted-causemos/anansi.git
+
+pip install -r requirements.txt
+```
+
+Then run the provided script to load IDNRA and DART datasets as a knowledge base in Causemos, for our purpose here SOURCE and TARGET are the same.
 
 ```
 #!/usr/bin/env bash
@@ -90,85 +91,9 @@ INDRA_DATASET=<path_to_indra_directory> \
 python src/knowledge_pipeline.py
 ```
 
-Once done, build and start the Causemos application. You will find the new Knowledge Base under "New Analysis Project", the Knowledge Base
-will appear with the name given by INDRA's metadata.
-
-
-Against running INDRA/DART service instances, you can
-- Download INDRA datasets via `scripts/download_indra_s3.py`
-- Download DART CDR dataset via `scripts/build_dart.sh`
-
-
-#### Post processing - Optional
-Causemos can also in addition generate recommendation indices, that can be used as suggestions for doing curations in bulk. For more 
-information please see [this repository](https://github.com/uncharted-causemos/wm-curation-recommendation).
 
 
 <a id="w5"></a>
 ### [W5](index.html#w5) Document management + reading + integration/assembly + HMI + BYOD
 In this workflow, it is assumed that both INDRA and DART are running as web services.
-
-
-#### Iniital setup
-BYOD + incremental assembly processing takes place outside of the Causemos app due to heavy data processing and higher latency. 
-This process uses the Prefect infrastructure for task scheduling and runs the `incremental_pipeline.py` script in the `anansi` project
-
-For full instructions please see READMEs for [incremental pipeline](https://github.com/uncharted-causemos/anansi) and [prefect setup](https://github.com/uncharted-causemos/slow-tortoise/blob/master/infra/prefect/setup.md).
-
-
-For setting up Prefect infrastructure
-- Instructions [here](https://github.com/uncharted-causemos/slow-tortoise/blob/master/infra/prefect/setup.md)
-
-
-To create a python-env
-- Ssh to Prefect-server
-- Run `conda create -n prefect-seq -c conda-forge "python>=3.8.0" prefect "elasticsearch==7.11.0" "boto3==1.17.18" "smart_open==5.0.0" python-dateutil requests`
-
-
-You also need an env/config file on the prefect server, with connection credentials to DART, INDRA, and others
-
-```
-export SOURCE_ES=
-export SOURCE_USERNAME=
-export SOURCE_PASSWORD=
-export TARGET_ES=
-export TARGET_USERNAME=
-export TARGET_PASSWORD=
-export DART_HOST=
-export DART_USER=
-export DART_PASS=
-export INDRA_HOST=
-
-# optional
-export CURATION_HOST=
-```
-
-To setup Prefect agent
-- Copy anansi/src to the Prefect-server
-- Copy credentials to Prefect-server
-- Ssh to Prefect-server
-- Stop Prefect local-agent
-- Source env: `source <env/config file>`
-- Restart local-agent: `PREFECT__ENGINE__EXECUTOR__DEFAULT_CLASS="prefect.executors.LocalExecutor" PYTHONPATH="${PYTHONPATH}:<path_to_anansi_src>" prefect agent local start --api "http://<Prefect-server>:4200/graphql" --label "non-dask"`
-
-
-To register `incremental_pipeline.py`:
-- Ssh to Prefect-server
-- Set the "shouldRegister" flag to True in the python file
-- Activate the env `conda activate prefect-seq`
-- Re(register) `python incremental_pipeline.py`
-
-
-#### Running Causemos with BYOD
-BYOD is an optional feature in Causemos that integrates with INDRA and DART services. To
-enable this feature, the  Causemos sever needs to start with the "dart" command line option, this will enable the periodic
-synchronizations against DART and INDRA.
-
-```
-# Usage: yarn start-server --schedules foo,bar
-yarn start-server --schedules dart
-```
-
-When a document is uploaded through Causemos, the request is sent to DART. Then behind the scenes Causemos server will poll DART
-to see what new reader outputs are available on the Kafka queues, cross-reference them against the Causemos internal document upload tracker,
-and then send the valid entries to INDRA to do incremental assembly.
+TODO
