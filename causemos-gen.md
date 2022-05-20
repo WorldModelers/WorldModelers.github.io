@@ -137,27 +137,15 @@ be improved or done next.
 
 ## Installation
 
-Detailed Causemos installation can be found in
-[https://github.com/uncharted-causemos/quickstart](https://github.com/uncharted-causemos/quickstart)
+More detailed Causemos installation can be found in
+[https://github.com/uncharted-causemos/quickstart](https://github.com/uncharted-causemos/quickstart).
 
-The following describes steps to install and run the Causemos
-application stack. This assumes the infrastructures and initial setups
-are in place. To install and configure the infrastructure, see the section 
-below.
+The following describes steps to install and run the Causemos application stack. This assumes the infrastructures and initial setups are in place. 
 
 1.  Clone `git@github.com:uncharted-causemos/quickstart.git`
-2.  Go into services directory
+2.  Go into app directory
 3.  Change the configuration files under envs
-4.  Run docker-compose up
+4.  Run `docker-compose up`
 5.  Causemos will be available on localhost:3003
 
-To install the Causemos Infrastructure stack, and prep the initial data:
-
-1.  Prepare environment: [https://github.com/uncharted-causemos/quickstart#prerequisite](https://github.com/uncharted-causemos/quickstart#prerequisite)
-2.  Clone `git@github.com:uncharted-causemos/quickstart.git`
-3.  Go to infra directory
-4.  Run docker-compose up
-5.  Install mappings: [https://github.com/uncharted-causemos/quickstart#elasticsearch](https://github.com/uncharted-causemos/quickstart#elasticsearch)
-6.  Install geo data: [https://github.com/uncharted-causemos/quickstart#configure-geo-reference-dataset](https://github.com/uncharted-causemos/quickstart#configure-geo-reference-dataset)
-7.  Install default buckets: [https://github.com/uncharted-causemos/quickstart#minio-setup](https://github.com/uncharted-causemos/quickstart#minio-setup)
-8.  Set up default prefect project: [https://github.com/uncharted-causemos/quickstart#prefect-setup](https://github.com/uncharted-causemos/quickstart#prefect-setup)
+For Causemos Infrastructure stack, and prep the initial data, you will need `docker`, 'python`, and a `prefect` enabled environment.The full detail can be found [here](https://github.com/uncharted-causemos/quickstart).
