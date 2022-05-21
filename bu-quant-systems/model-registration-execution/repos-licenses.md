@@ -6,6 +6,6 @@ grand_parent: Quantitative Analysis Toolkit
 nav_order: 3
 ---
 
-# Coming Soon
+# Dojo Modeling Repository
 
-Dojo repositories for registration and execution of expert domain models (with installation/setup/configuration instructions)
+Dojo can be accessed at [https://github.com/dojo-modeling/dojo](https://github.com/dojo-modeling/dojo) and is developed under the MIT License.
