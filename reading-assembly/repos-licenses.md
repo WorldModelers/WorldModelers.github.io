@@ -64,40 +64,36 @@ CSerif contains C/C++ code for pre-reading of texts into BBN's SerifXML format. 
 - Documentation: [https://github.com/BBN-E/serif/blob/master/README.md](https://github.com/BBN-E/serif/blob/master/README.md)
 - Stable version: [https://github.com/BBN-E/serif](https://github.com/BBN-E/serif)
 
+
 ### Causemos
+Within the reading/assembly ecosystem Causemos has the following components:
 
-To load data into Causemos, you need the following utilities:
+Causemos HMI
+- Repository: [https://github.com/uncharted-causemos/causemos](https://github.com/uncharted-causemos/causemos)
+- License Apache-2
+- Documentation: [https://github.com/uncharted-causemos/causemos/blob/master/README.md](https://github.com/uncharted-causemos/causemos/blob/master/README.md)
 
-- [atlas](https://github.com/uncharted-causemos/atlas) for setting up the initial mapping and analyzers.
-- [anansi](https://github.com/uncharted-causemos/anansi), the knowledge data loader.
+Causemos knowledge pipeline
+- Repository: [https://github.com/uncharted-causemos/anansi](https://github.com/uncharted-causemos/anansi)
+- Documentation: [https://github.com/uncharted-causemos/anansi/blob/main/README.md](https://github.com/uncharted-causemos/anansi/blob/main/README.md)
+- License Apache-2
 
-In addition, Causemos data loader requires a running instance of
-Elasticsearch (version 7+) and Python environment (version 3+).
+Causemos data pipeline, for BYOD infrastructure
+- Repository: [https://github.com/uncharted-causemos/slow-tortoise](https://github.com/uncharted-causemos/slow-tortoise)
+- License Apache-2
+- Documentation [https://github.com/uncharted-causemos/slow-tortoise/blob/master/README.md](https://github.com/uncharted-causemos/slow-tortoise/blob/master/README.md)
+  - Prefect [https://github.com/uncharted-causemos/slow-tortoise/blob/master/infra/prefect/setup.md](https://github.com/uncharted-causemos/slow-tortoise/blob/master/infra/prefect/setup.md)
 
-1.  Install the ElasticSearch mappings:
+Causemos schemas and mappings
+- Repository: [https://github.com/uncharted-causemos/atlas](https://github.com/uncharted-causemos/atlas)
+- License Apache-2
 
-    a. `ES=<host:port> python es_mapper.py`
+Causemos recommendation/curation service
+- Repository: [https://github.com/uncharted-causemos/wm-curation-recommendation](https://github.com/uncharted-causemos/wm-curation-recommendation)
+- Documentation: [https://github.com/uncharted-causemos/wm-curation-recommendation/blob/main/README.md](https://github.com/uncharted-causemos/wm-curation-recommendation/blob/main/README.md)
+- License Apache-2
 
-2.  Download and extract the following geolocation datasets:
 
-    a. http://download.geonames.org/export/dump/allCountries.zip
-    
-    b. [http://clulab.cs.arizona.edu/models/gadm_woredas.txt](http://clulab.cs.arizona.edu/models/gadm_woredas.txt)
-
-3.  Under anansi, run geo loader script. Note: this will take a few
-    minutes.
-
-    a. `ES=<es_url> ES_USER=<user> ES_PASSWORD=<password> python
-         geo_loader.py`
-
-4.  Start loading the corpus datasets. Here it is assumed you have
-    access to the INDRA dataset and the DART CDR dataset. In most
-    cases, SOURCE_ES and TARGET_ES should have the same values. This
-    may take some time to complete if the datasets are of significant
-    size. On a 150K INDRA dataset the processing time can be about
-    20--25 minutes.
-
-    `#!/usr/bin/env bash`
 
 ### Sofia
 
