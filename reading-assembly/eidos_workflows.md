@@ -2,6 +2,7 @@
 title: Eidos Workflows
 has_children: false
 parent: Eidos
+grand_parent: Causal Knowledge Extraction and Assembly Toolkit
 nav_order: 1
 ---
 # Eidos Workflows
