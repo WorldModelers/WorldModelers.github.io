@@ -2,6 +2,7 @@
 title: INDRA World workflows
 has_children: false
 parent: INDRA World
+grand_parent: Causal Knowledge Extraction and Assembly Toolkit
 nav_order: 1
 ---
 ## INDRA World Workflows
