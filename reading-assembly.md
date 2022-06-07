@@ -105,7 +105,7 @@ Options for running the integrated system are described [here](reading-assembly/
 
 Systems used:
 * Document and ontology management: [DART](reading-assembly/dart.html#w5)
-* Readers: [Eidos](reading-assembly/eidos.html#w5), [HUME](reading-assembly/hume.html#w5), [Sofia](reading-assembly/sofia.html#w5)
+* Readers: [Eidos](reading-assembly/eidos.html#w5), [HUME](reading-assembly/hume.html#w5)
 * Integration/assembly: [INDRA](reading-assembly/indra.html#w5)
 * HMI: [Causemos](reading-assembly/causemos.html#w5)
 
@@ -121,9 +121,7 @@ outputs for downstream usage.
 The following pages provide detailed instructions for running each reading
 system in a reading-only workflow:
 
-  * [Eidos](reading-assembly/eidos.html#w1)
-  * [HUME](reading-assembly/hume.html#w1)
-  * [Sofia](reading-assembly/sofia.html#w1)
+  * Readers: one of [Eidos](reading-assembly/eidos.html#w1), [HUME](reading-assembly/hume.html#w1), [Sofia](reading-assembly/sofia.html#w1)
 
 <a id="w2"></a>
 ### Reading + integration/assembly
