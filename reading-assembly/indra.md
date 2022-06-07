@@ -7,7 +7,7 @@ has_toc: false
 ---
 # INDRA World
 
-<img align="left" src="https://raw.githubusercontent.com/indralab/indra_world/master/doc/indra_world_logo.png" width="300" height="160" />
+<img align="left" style="padding-right: 10px;" src="https://raw.githubusercontent.com/indralab/indra_world/master/doc/indra_world_logo.png" width="300" height="160" />
 INDRA World is a knowledge assembly system that takes as input causal relations
 extracted by one or more reading systems from text. INDRA World first processes
 the output of reading systems into a standardized object model called INDRA
