@@ -3,7 +3,7 @@ title: HUME Workflows
 has_children: false
 parent: HUME
 grand_parent: Causal Knowledge Extraction and Assembly Toolkit
-nav_order: 3
+nav_order: 1
 ---
 # HUME Workflows
 Hume is a machine reading system developed by BBN. It extracts events and
