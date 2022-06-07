@@ -105,7 +105,7 @@ Options for running the integrated system are described [here](reading-assembly/
 
 Systems used:
 * Document and ontology management: [DART](reading-assembly/dart.html#w5)
-* Readers: [Eidos](reading-assembly/eidos_workflows.html#integrated-system), [HUME](reading-assembly/hume.html#w5)
+* Readers: [Eidos](reading-assembly/eidos_workflows.html#integrated-system), [HUME](reading-assembly/hume_workflows.html#integrated-system)
 * Integration/assembly: [INDRA World](reading-assembly/indra_workflows.html#integrated-system)
 * HMI: [Causemos](reading-assembly/causemos.html#w5)
 
@@ -121,7 +121,7 @@ outputs for downstream usage.
 The following pages provide detailed instructions for running each reading
 system in a reading-only workflow:
 
-  * Readers: one of [Eidos](reading-assembly/eidos_workflows.html#reading-only), [HUME](reading-assembly/hume.html#w1), [Sofia](reading-assembly/sofia.html#w1)
+  * Readers: one of [Eidos](reading-assembly/eidos_workflows.html#reading-only), [HUME](reading-assembly/hume_workflows.html#reading-and-assembly), [Sofia](reading-assembly/sofia.html#w1)
 
 <a id="w2"></a>
 ### Reading + integration/assembly
@@ -135,7 +135,7 @@ components to create a coherent knowledge base. This section describes
 the usage of these components independent of the integrated system.
 
 Systems used:
-  * Readers: one or more of [Eidos](reading-assembly/eidos_workflows.html#reading-and-assembly), [HUME](reading-assembly/hume.html#w2), or [Sofia](reading-assembly/sofia.html#w2)
+  * Readers: one or more of [Eidos](reading-assembly/eidos_workflows.html#reading-and-assembly), [HUME](reading-assembly/hume_workflows.html#reading-only), or [Sofia](reading-assembly/sofia.html#w2)
   * Integration/assembly: [INDRA](reading-assembly/indra_workflows.html#reading-and-assembly)
 
 
@@ -152,7 +152,7 @@ Systems used:
   
     Hume is BBN's machine reading system that extracts causal relations from text and supports clustering for ontology construction.
     
-    Workflows: [Reading only](reading-assembly/hume.html#w1), [Reading and assembly](reading-assembly/hume.html#w2), [Integrated](reading-assembly/hume.html#w5)
+    Workflows: [Reading only](reading-assembly/hume_workflows.html#reading-only), [Reading and assembly](reading-assembly/hume_workflows.html#reading-and-assembly), [Integrated](reading-assembly/hume_workflows.html#integrated-system)
 
   * [Sofia](reading-assembly/sofia.html)
 
