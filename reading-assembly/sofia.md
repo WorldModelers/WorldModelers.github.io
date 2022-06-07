@@ -3,6 +3,7 @@ title: Sofia
 has_children: true
 parent: Causal Knowledge Extraction and Assembly Toolkit
 nav_order: 4
+has_toc: false
 ---
 # Sofia
 
