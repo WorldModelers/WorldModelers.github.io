@@ -3,6 +3,7 @@ title: HUME
 has_children: true
 parent: Causal Knowledge Extraction and Assembly Toolkit
 nav_order: 3
+has_toc: false
 ---
 # HUME
 
