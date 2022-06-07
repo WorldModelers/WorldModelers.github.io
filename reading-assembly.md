@@ -121,7 +121,7 @@ outputs for downstream usage.
 The following pages provide detailed instructions for running each reading
 system in a reading-only workflow:
 
-  * Readers: one of [Eidos](reading-assembly/eidos_workflows.html#reading-only), [HUME](reading-assembly/hume_workflows.html#reading-and-assembly), [Sofia](reading-assembly/sofia.html#w1)
+  * Readers: one of [Eidos](reading-assembly/eidos_workflows.html#reading-only), [HUME](reading-assembly/hume_workflows.html#reading-only), [Sofia](reading-assembly/sofia_workflows.html#reading-only)
 
 <a id="w2"></a>
 ### Reading + integration/assembly
@@ -135,7 +135,7 @@ components to create a coherent knowledge base. This section describes
 the usage of these components independent of the integrated system.
 
 Systems used:
-  * Readers: one or more of [Eidos](reading-assembly/eidos_workflows.html#reading-and-assembly), [HUME](reading-assembly/hume_workflows.html#reading-only), or [Sofia](reading-assembly/sofia.html#w2)
+  * Readers: one or more of [Eidos](reading-assembly/eidos_workflows.html#reading-and-assembly), [HUME](reading-assembly/hume_workflows.html#reading-only), or [Sofia](reading-assembly/sofia_workflows.html#reading-and-assembly)
   * Integration/assembly: [INDRA](reading-assembly/indra_workflows.html#reading-and-assembly)
 
 
@@ -158,7 +158,7 @@ Systems used:
 
     Sofia is a machine reading system developed at CMU that extracts causal relations from text.
   
-    Workflows: [Reading only](reading-assembly/sofia.html#w1), [Reading and assembly](reading-assembly/sofia.html#w2), [Integrated](reading-assembly/sofia.html#w5)
+    Workflows: [Reading only](reading-assembly/sofia_workflows.html#reading-only), [Reading and assembly](reading-assembly/sofia_workflows.html#reading-and-assembly), [Integrated](reading-assembly/sofia_workflows.html#integrated-system)
 
 * Integration/assembly
   * [Indra World](reading-assembly/indra.html)
