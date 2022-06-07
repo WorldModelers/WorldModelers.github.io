@@ -1,130 +1,51 @@
 ---
 title: INDRA World
-has_children: false
+has_children: true
 parent: Causal Knowledge Extraction and Assembly Toolkit
 nav_order: 5
+has_toc: false
 ---
 # INDRA World
 
-INDRA World is a knowledge assembly system that ingests causal relations
-extracted by one or more reading systems from documents, captures these in
-a standardized representation, and runs an assembly pipeline to recognize full
-and partial overlaps between relations, filter according to various criteria,
-and assess belief given the overall support for each relation.
+<img align="left" src="https://raw.githubusercontent.com/indralab/indra_world/master/doc/indra_world_logo.png" width="300" height="160" />
+INDRA World is a knowledge assembly system that takes as input causal relations
+extracted by one or more reading systems from text. INDRA World first processes
+the output of reading systems into a standardized object model called INDRA
+Statements and then performs a number of assembly operations on Statements.
+An INDRA assembly pipeline can be configured flexibly to apply various
+filters (for quality, relevance, etc.), normalization, and processing steps.
+
+INDRA World builds on and is a generalization of INDRA, a knowledge and model
+assembly system originally developed for biology. INDRA World makes use of the
+general INDRA assembly logic to find relationships between Statements,
+including matching, contradiction, and refinement (i.e., one statement is a
+more general or more specific version of the other). These inter-Statement
+relations are reconstructed with respect to an ontology graph and INDRA World
+uses a scalable algorithm that can handle finding relations between
+tens of millions of Statements. Statements that match
+exactly are merged and their supporting evidences are combined. Stateements
+that are in a refinement relationship where one is a specification or
+a generalization of the other are organized into a refinement graph.
+Given the overall direct or indirect support for a Statement, INDRA World
+uses a probabilistic "belief" model to determine how likely it is that
+the Statement is correct (i.e., not a result of a reading error) and assigns
+a score between 0 and 1.
+
+After the assembly process, INDRA Statements can be used directly programmatically
+or interactively through visual interfaces such as CauseMos. They are also
+the basis of qualitative analysis and serve as input to the DySE and Delphi
+systems which turn collections of assembled INDRA Statements into
+Boolean models and Dynamic Bayesian Networks, respectively.
+
+Importantly, INDRA World implements a service architecture which allows it
+perform incremental assembly in a project-specific way.
+For example, an initial assembly  produced by INDRA World might have
+incorporated reader output for 10k documents (which comes at a large initial
+reading and processing cost), and later 10 more documents need to be added
+to the same project. The INDRA World REST API can incorporate reader
+outputs for these new documents and produce an "assembly delta" which
+describes how the structure of Statements, their relationships, their
+supporting evidences, as well as Statement beliefx change as a result
+of the new relations extracted from the documents.
 
 The INDRA World documentation is available [here](https://indra-world.readthedocs.io/en/latest/).
-
-## Workflows
-
-<a id="w2"></a>
-### [W2](index.html#w2) Reading + integration/assembly
-
-In this workflow INDRA World processes outputs from one or more reading systems
-(Eidos, Hume or Sofia) as input. We assume that each reading system was
-already run and produced a number of output files. INDRA World assembly can be
-done using the [command line interface](https://github.com/indralab/indra_world#command-line-interface)
-either natively (if an appropriate Python environment and INDRA World and its
-dependencies are installed) or through Docker.
-
-```
-indra_world --reader-output-files READER_OUTPUT_FILES --ontology-path ONTOLOGY_PATH --output-folder OUTPUT_FOLDER
-```
-
-In the above, `READER_OUTPUT_FILES` refers to a JSON file with the following
-structure
-```
-{
- "eidos":
- [
- "/path/to/file1",
- "/path/to/file2",
- ],
- "hume": [
- ...
- ]
-}
-```
-where keys are reading systems and values are lists of paths to their output
-files.
-
-`ONTOLOGY_PATH` is a path to a standard ontology YAML file.
-`OUTPUT_FOLDER` refers to a folder in which the resulting `statements.json`
-JSON-L dump of assembled INDRA Statements will be written. For more optional
-arguments, see the CLI documentation.
-
-<a id="w3"></a>
-### [W3](index.html#w3) Document management + reading + integration/assembly
-
-In this workflow, INDRA World has access to DART, which keeps track of and provides
-access to documents, reader outputs, and ontologies through a standardized
-API. The [INDRA World CLI](https://github.com/indralab/indra_world#command-line-interface) can be parameterized to retrieve reader outputs as well as
-an ontology through the DART API. An example call to the INDRA World CLI
-is as follows:
-
-```
-indra_world --reader-output-dart-query READER_OUTPUT_DART_QUERY --ontology-id ONTOLOGY_ID --output-folder OUTPUT_FOLDER
-```
-
-The argument `--reader-output-dart-query READER_OUTPUT_DART_QUERY` is
-a path to a JSON file in which the parameters for querying DART are
-specified following the format of [this function](https://indra-world.readthedocs.io/en/latest/modules/sources/dart.html#indra_world.sources.dart.client.DartClient.get_reader_output_records). For example,
-
-```
-{
- "readers": ["eidos", "hume"],
- "ontology_id": "49277ea4-7182-46d2-ba4e-87800ee5a315"
-}
-```
-will query DART for outputs from the `eidos` and `hume` readers produced
-with the ontology ID `49277ea4-7182-46d2-ba4e-87800ee5a315`.
-
-Alternatively, if the user wants to hand pick which specific DART reader output
-records to use for assembly (instead of finding these through a structured
-query as described above), the `--reader-output-dart-keys READER_OUTPUT_DART_KEYS`
-argument can be used which points to a simple text file in which the unique storage
-keys associated with a list of DART records are given as e.g., 
-
-```
-d6c90753-fe23-43c1-9457-8518b3eaeb65.jsonld
-5b901d9a-44b9-4d57-9257-1e0881ed2d06.jsonld
-...
-```
-
-In this workflow, the ontology is also registered in DART and can be specified
-simply through its ID using the `--ontology-id` argument.
-
-The output folder for INDRA is specified as using `--output-folder`, as
-described in [W2](indra.html#w2).
-
-<a id="w4"></a>
-### [W4](index.html#w4) Document management + reading + integration/assembly + HMI
-
-This workflow is different from [W3](indra.html#w3) only in that we need to
-make sure the INDRA World CLI produces its output in an appropriate folder structure,
-wiuth output files compatible with Causemos. To achieve this, in addition to the 
-`--output-folder` argument, we need to supply the `--causemos-metadata CAUSEMOS_METADATA`
-argument. Here, `CAUSEMOS_METADATA` is the path to a JSON file containing
-metadata that Causemos uses to identify and describe the assembled result.
-The structure of this JSON file follows the `metadata.json` entry described
-[here](https://indra-world.readthedocs.io/en/latest/service.html#structure-of-each-corpus).
-
-An example CLI call for this workflow is as follows:
-```
-indra_world --reader-output-dart-query READER_OUTPUT_DART_QUERY --ontology-id ONTOLOGY_ID --output-folder OUTPUT_FOLDER --causemos-metadata CAUSEMOS_METADATA
-```
-<a id="w5"></a>
-### [W5](index.html#w5) Document management + reading + integration/assembly + HMI + BYOD
-
-This workflow is meaningfully different from W2-4 in that INDRA World here has
-to be running as a service to support uploading documents in Causemos
-and performing incremental assembly with respect to an existing Causemos
-project based on reader output for the new documents.
-
-To run the INDRA World service, follow the instructions [here](https://indra-world.readthedocs.io/en/latest/service.html).
-
-Once the service is running,
-one can build an assembled knowledge base using INDRA World based on
-reader outputs captured by DART using (1) INDRA World's Python API by
-using the [Corpus manager](https://indra-world.readthedocs.io/en/latest/modules/service/corpus_manager/index.html), or (2) using the INDRA World assembly
-dashboard web UI which runs at http://localhost:8001/dashboard under
-default settings.

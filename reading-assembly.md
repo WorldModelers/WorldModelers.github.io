@@ -105,8 +105,8 @@ Options for running the integrated system are described [here](reading-assembly/
 
 Systems used:
 * Document and ontology management: [DART](reading-assembly/dart.html#w5)
-* Readers: [Eidos](reading-assembly/eidos.html#w5), [HUME](reading-assembly/hume.html#w5), [Sofia](reading-assembly/sofia.html#w5)
-* Integration/assembly: [INDRA](reading-assembly/indra.html#w5)
+* Readers: [Eidos](reading-assembly/eidos_workflows.html#integrated-system), [HUME](reading-assembly/hume.html#w5)
+* Integration/assembly: [INDRA World](reading-assembly/indra_workflows.html#integrated-system)
 * HMI: [Causemos](reading-assembly/causemos.html#w5)
 
 ## Sub-system workflows
@@ -121,9 +121,7 @@ outputs for downstream usage.
 The following pages provide detailed instructions for running each reading
 system in a reading-only workflow:
 
-  * [Eidos](reading-assembly/eidos.html#w1)
-  * [HUME](reading-assembly/hume.html#w1)
-  * [Sofia](reading-assembly/sofia.html#w1)
+  * Readers: one of [Eidos](reading-assembly/eidos_workflows.html#reading-only), [HUME](reading-assembly/hume.html#w1), [Sofia](reading-assembly/sofia.html#w1)
 
 <a id="w2"></a>
 ### Reading + integration/assembly
@@ -137,8 +135,8 @@ components to create a coherent knowledge base. This section describes
 the usage of these components independent of the integrated system.
 
 Systems used:
-  * Readers: one or more of [Eidos](reading-assembly/eidos.html#w2), [HUME](reading-assembly/hume.html#w2), or [Sofia](reading-assembly/sofia.html#w2)
-  * Integration/assembly: [INDRA](reading-assembly/indra.html#w2)
+  * Readers: one or more of [Eidos](reading-assembly/eidos_workflows.html#reading-and-assembly), [HUME](reading-assembly/hume.html#w2), or [Sofia](reading-assembly/sofia.html#w2)
+  * Integration/assembly: [INDRA](reading-assembly/indra_workflows.html#reading-and-assembly)
 
 
 ## Component-specific documentation
@@ -148,7 +146,7 @@ Systems used:
 
     Eidos is the machine reading system developed by the CLU lab at University of Arizona.
   
-    Workflows: ([Reading only](reading-assembly/eidos.html#w1), [Reading and assembly](reading-assembly/eidos.html#w2), [Integrated](reading-assembly/eidos.html#w5))
+    Workflows: ([Reading only](reading-assembly/eidos_workflows.html#reading-only), [Reading and assembly](reading-assembly/eidos_workflows.html#reading-and-assembly), [Integrated](reading-assembly/eidos_workflows.html#integrated-system))
 
   * [HUME](reading-assembly/hume.html)
   
@@ -169,7 +167,7 @@ Systems used:
     standardizes their representation, finds ontological relationships between relations, calculates overall confidence,
     and has a configurable pipeline to process and filter causal knowledge.
   
-    Workflows: ([Reading and assembly](reading-assembly/indra.html#w2), [Integrated](reading-assembly/indra.html#w5))
+    Workflows: ([Reading and assembly](reading-assembly/indra_workflows.html#reading-and-assembly), [Integrated](reading-assembly/indra_workflows.html#integrated-system))
 
 * Document management
   * [DART](reading-assembly/dart.html)
