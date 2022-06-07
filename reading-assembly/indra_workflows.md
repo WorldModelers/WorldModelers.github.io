@@ -36,7 +36,7 @@ API also allows incrementally assembling new content against an existing
 corpus.
 
 <a id="Reading and assembly"></a>
-### [Reading and assembly](index.html#reading-assembly)
+### [Reading and assembly](index.html#reading-and-assembly)
 
 In this workflow INDRA World processes outputs from one or more reading systems
 (Eidos, Hume or Sofia) as input. We assume that each reading system was
