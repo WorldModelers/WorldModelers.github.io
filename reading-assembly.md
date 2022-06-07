@@ -146,19 +146,19 @@ Systems used:
 
     Eidos is the machine reading system developed by the CLU lab at University of Arizona.
   
-    Workflows: ([Reading only](reading-assembly/eidos_workflows.html#reading-only), [Reading and assembly](reading-assembly/eidos_workflows.html#reading-and-assembly), [Integrated](reading-assembly/eidos_workflows.html#integrated-system))
+    Workflows: [Reading only](reading-assembly/eidos_workflows.html#reading-only), [Reading and assembly](reading-assembly/eidos_workflows.html#reading-and-assembly), [Integrated](reading-assembly/eidos_workflows.html#integrated-system)
 
   * [HUME](reading-assembly/hume.html)
   
     Hume is BBN's machine reading system that extracts causal relations from text and supports clustering for ontology construction.
     
-    Workflows: ([Reading only](reading-assembly/hume.html#w1), [Reading and assembly](reading-assembly/hume.html#w2), [Integrated](reading-assembly/hume.html#w5))
+    Workflows: [Reading only](reading-assembly/hume.html#w1), [Reading and assembly](reading-assembly/hume.html#w2), [Integrated](reading-assembly/hume.html#w5)
 
   * [Sofia](reading-assembly/sofia.html)
 
     Sofia is a machine reading system developed at CMU that extracts causal relations from text.
   
-    Workflows: ([Reading only](reading-assembly/sofia.html#w1), [Reading and assembly](reading-assembly/sofia.html#w2), [Integrated](reading-assembly/sofia.html#w5))
+    Workflows: [Reading only](reading-assembly/sofia.html#w1), [Reading and assembly](reading-assembly/sofia.html#w2), [Integrated](reading-assembly/sofia.html#w5)
 
 * Integration/assembly
   * [Indra World](reading-assembly/indra.html)
@@ -167,18 +167,18 @@ Systems used:
     standardizes their representation, finds ontological relationships between relations, calculates overall confidence,
     and has a configurable pipeline to process and filter causal knowledge.
   
-    Workflows: ([Reading and assembly](reading-assembly/indra_workflows.html#reading-and-assembly), [Integrated](reading-assembly/indra_workflows.html#integrated-system))
+    Workflows: [Reading and assembly](reading-assembly/indra_workflows.html#reading-and-assembly), [Integrated](reading-assembly/indra_workflows.html#integrated-system)
 
 * Document management
   * [DART](reading-assembly/dart.html)
   
     The Data Analytics and Reasoning Toolkit (DART) is the data ingestion pipeline for the World Modelers platform.
     
-    Workflows: ([Integrated](reading-assembly/dart.html#w5))
+    Workflows: [Integrated](reading-assembly/dart.html#w5)
 
 * HMI (Human-Machine Interface)
   * [Causemos](reading-assembly/causemos.html)
   
     Causemos is the main HMI for the World Modelers program, built and maintained by Uncharted Software.
   
-    Workflows: ([Integrated](reading-assembly/causemos.html#w5))
+    Workflows: [Integrated](reading-assembly/causemos.html#w5)
