@@ -32,26 +32,6 @@ In this workflow, Causemos ingests, combines and enriches an INDRA statements da
 
 Here is an abridged and lightweight version of using Causemos as a knowledge explorer, for more detail on a complete Causemos install please consult the [full documentation](https://github.com/uncharted-causemos/quickstart#loading-knowledge-data).
 
-
-Start an ElasticSearch instance
-
-```
-docker run --name es01 --net elastic -p 9200:9200 -p 9300:9300 -it docker.elastic.co/elasticsearch/elasticsearch:7.17.3
-```
-
-Load index mappings
-
-```
-git clone git@github.com:uncharted-causemos/atlas.git
-
-cd atlas
-
-ES=<elastic_url> python ./es_mapper.py
-```
-
-
-To start Causemos with knowledge explorer 
-
 ```
 # 1. Clone quick start
 git clone git@github.com:uncharted-causemos/quickstart.git
@@ -60,40 +40,68 @@ cd app-kb
 
 # 2. Update configuration files under env
 
-# 3. Start docker
+# 3. Start docker, this may take > 30 seconds
 docker-compose up
 ```
 Causemos should be available on http://localhost:3003
 
 
-Then to load data into Causemos
+To load data into Causemos we need 
+- INDRA dataset
+- DART CDR dataset, in JSON-L format
 
-```
-# Clone knowledge pipeline
-git clone git@github.com:uncharted-causemos/anansi.git
-
-pip install -r requirements.txt
-```
-
-Then run the provided script to load IDNRA and DART datasets as a knowledge base in Causemos, for our purpose here SOURCE and TARGET are the same.
+To create a CDR dataset, you can use the following script that will pull and convert to JSON-L. You will need to supply the access credentals.
 
 ```
 #!/usr/bin/env bash
 
-SOURCE_ES=xyz \
-SOURCE_USERNAME=xyz \
-SOURCE_PASSWORD=xyz \
-TARGET_ES=xyz \
-TARGET_USERNAME=xyz \
-TARGET_PASSWORD=xyz \
-DART_DATA=<path_to_dart_cdr.json> \
-INDRA_DATASET=<path_to_indra_directory> \
-python src/knowledge_pipeline.py
+# TwoSix CDR download
+# 1 - download zip to tmp
+# 2 - extract and rebulid json-l
+# 3 - clean up
+
+# Clean up
+rm raw_data.zip
+rm -rf tmp
+
+mkdir tmp
+
+# Download
+DART="https://wm-ingest-pipeline-rest-1.prod.dart.worldmodelers.com/dart/api/v1"
+USERNAME="XXXXXXX"
+PASS="XXXXXXX"
+AUTH=`echo -n $USERNAME:$PASS | base64`
+
+curl -XGET \
+  -H "Accept: application/zip"  \
+  -H "Authorization: Basic $AUTH" \
+  "$DART/cdrs/archive" -o raw_data.zip
+
+# Extract
+unzip -j raw_data.zip -d tmp
+
+rm dart_cdr.json
+for f in tmp/*.json; do
+  cat $f >> dart_cdr.json
+  echo >> dart_cdr.json
+done
+```
+
+To kick off the data ingestion, use the curl command, replace the `indra` and `dart` with the appropriate paths, note they can be URLs or file paths (file://).
+
+```
+#!/usr/bin/env bash
+
+curl -XPOST -H "Content-type: application/json" http://localhost:6000/kb -d'
+{
+  "indra": "http://10.64.16.209:4005/pipeline-test/indra",
+  "dart": "http://10.64.16.209:4005/pipeline-test/dart/july-sample.jsonl"
+}
+'
 ```
 
 
 
 <a id="w5"></a>
 ### [W5](index.html#w5) Document management + reading + integration/assembly + HMI + BYOD
-In this workflow, it is assumed that both INDRA and DART are running as web services.
-TODO
+In this workflow, it is assumed that both INDRA and DART are running as web services and have been configured in the env files. No additional setup is needed here.
