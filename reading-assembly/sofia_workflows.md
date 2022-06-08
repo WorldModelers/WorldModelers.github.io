@@ -64,8 +64,9 @@ system including the following.
 
 
 At the time of writing, the changes necessary to run `SOFIA` with the latest World Modelers configuration has not been merged into the `master` branch. One must use a Docker image that is based off of [this fork](https://github.com/twosixlabs-dart/WM-src) or [this branch](TODO) of the main repository. The following Docker compose configuration can be used to run `SOFIA` in order to support both of the scenarios outlined above:
+
 | Name                       | Description                                                          | Examples                                               |
-|----------------------------|----------------------------------------------------------------------|--------------------------------------------------------|
+| -------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------ |
 | DART_KAFKA_BROKER_URL      | hostname of the Kafka broker that hosts the DART CDR stream          | kafka.dart.worldmodelers.com                           |
 | DART_READER_UPLOAD_API_URL | hostname of the DART Reader Output REST API                          | rest.dart.worldmodelers.com                            |
 | DART_CDR_API_URL           | hostname of the DART CDR Retrieval REST API                          | rest.dart.worldmodelers.com                            |
