@@ -16,15 +16,15 @@ nav_order: 1
 
 
 <a id="integrated-system"></a>
-## [Integrated system](TODO)
+## [Integrated system](./reading-assembly.html#running-the-integrated-system)
 
-Eidos is built into the integrated system by virtue of it being incorporated into CREATE, which organizes numerous docker images, including [one containing Eidos](https://hub.docker.com/r/clulab/eidos-dart), into a complete "ecosystem".  Eidos should therefore be pre-configured for this workflow.  How that came about is detailed further below.  To understand the configuration, one should first be familiar with how Eidos interacts with DART and Causemos, the two other components of the integrated system.
+Eidos is built into the integrated system by virtue of it being incorporated into CREATE, which organizes numerous docker images, including [one containing Eidos](https://hub.docker.com/r/clulab/eidos-dart), into a complete "ecosystem".  Eidos should therefore be pre-configured for this workflow.  How that came about is detailed further below.  To understand the configuration, one should first be familiar with how Eidos interacts with [DART](./dart.html) and [Causemos](./causemos.html), the two other components of the integrated system.
 
-Document management for this workflow is provided by [DART](./dart.html#w3), which supplies both documents and ontologies to Eidos and then accepts output from Eidos and forwards it to INDRA for assembly.  Input documents are in CDR (Common Data Representation) format, which provides metadata such as document creation time and title, while the [JSON-LD](https://github.com/clulab/eidos/wiki/JSON-LD) output format is unchanged from other workflows.  Three handshaking stages are added to the regular Eidos reading stage.  DART provides notifications, via [Kafka](https://kafka.apache.org/) messages, of the availability of new documents and ontologies which Eidos processes with a `KafkaConsumer`.  The notifications includes details of how to download the actual documents and ontologies via a [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) interface, which Eidos accesses as a `RestConsumer`.  After the reading stage, Eidos returns results to DART via another REST interface, but this time as a `RestProducer`.
+Document management for this workflow is provided by [DART](./dart.html#w3), which supplies both documents and ontologies to Eidos and then accepts output from Eidos and forwards it to [INDRA](./indra_workflows.md#integrated-system) for assembly.  Input documents are in CDR (Common Data Representation) format, which provides metadata such as document creation time and title, while the [JSON-LD](https://github.com/clulab/eidos/wiki/JSON-LD) output format is unchanged from other workflows.  Three handshaking stages are added to the regular Eidos reading stage.  DART provides notifications, via [Kafka](https://kafka.apache.org/) messages, of the availability of new documents and ontologies which Eidos processes with a `KafkaConsumer`.  The notifications includes details of how to download the actual documents and ontologies via a [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) interface, which Eidos accesses as a `RestConsumer`.  After the reading stage, Eidos returns results to DART via another REST interface, but this time as a `RestProducer`.
 
 DART &rarr; KafkaConsumer &rarr; RestConsumer &rarr; Eidos &rarr; RestProducer &rarr; DART
 
-The HMI (human machine interface) component of this workflow is provided by [Causemos](TODO), which has facilities for modifying ontologies.  As a result, requests for "regrounding" of documents are part of this workflow.  New ontologies are registered with DART and then forwarded to readers through the pipeline.  Components internal to Eidos cache intermediate results, particularly the "reading" of a document, and reuse them when an ontology changes.  The reader either reads the document or retrieves the cached reading and submits it to the grounder which takes the new ontology into account.
+The HMI (human machine interface) component of this workflow is provided by [Causemos](./causemos.html#w3), which has facilities for modifying ontologies.  As a result, requests for "regrounding" of documents are part of this workflow.  New ontologies are registered with DART and then forwarded to readers through the pipeline.  Components internal to Eidos cache intermediate results, particularly the "reading" of a document, and reuse them when an ontology changes.  The reader either reads the document or retrieves the cached reading and submits it to the grounder which takes the new ontology into account.
 
 DART &rarr; KafkaConsumer &rarr; RestConsumer &rarr; Eidos (&rarr; reader &rarr; grounder) &rarr; RestProducer &rarr; DART
 
@@ -111,13 +111,13 @@ As mentioned previously, these instructions should only be necessary for a recon
 
 
 <a id="reading-and-assembly"></a>
-## [Reading and assembly](TODO)
+## [Reading and assembly](./reading-assembly.html#reading--integrationassembly)
 
-The assembly component in question is [INDRA](./indra.html#w2), which is able to be configured to read output files from Eidos on a filesystem.  Just get the files generated by the following reading only workflow to a place where INDRA can read them (via email attachments, thumb drive, FTP, Google Drive, RCP, etc.) and then configure INDRA appropriately.  It reads Eidos files in their native [JSON-LD](https://github.com/clulab/eidos/wiki/JSON-LD) format.  It will want to know which [ontology](https://github.com/WorldModelers/Ontologies) to use, so be sure to coordinate that between the two components.
+The assembly component in question is [INDRA](./indra_workflows.md#reading-and-assembly), which is able to be configured to read output files from Eidos on a filesystem.  Just get the files generated by the following reading only workflow to a place where INDRA can read them (via email attachments, thumb drive, FTP, Google Drive, RCP, etc.) and then configure INDRA appropriately.  It reads Eidos files in their native [JSON-LD](https://github.com/clulab/eidos/wiki/JSON-LD) format.  It will want to know which [ontology](https://github.com/WorldModelers/Ontologies) to use, so be sure to coordinate that between the two components.
 
 
 <a id="reading-only"></a>
-## [Reading only](TODO)
+## [Reading only](./reading-assembly.html#reading-only)
 
 Eidos can run stand-alone on a single computer independently of the other World Modelers (WM) components.  In this case, the most applicable tool to use is `sbt`.  Input files are most likely plain text documents (or potentially CDRs for Common Data Representation) and for output there are various choices, but the native format is [JSON-LD](https://github.com/clulab/eidos/wiki/JSON-LD).  It is assumed that the ontology is known at build time and remains constant during a run.  Given these conditions, the best entry point to use is `ExtractTxtMetaFromDirectory` and the command is
 ```
