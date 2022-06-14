@@ -1,8 +1,9 @@
 ---
 title: DART
-has_children: false
+has_children: true
 parent: Causal Knowledge Extraction and Assembly Toolkit
 nav_order: 1
+has_toc: false
 ---
 # DART
 
