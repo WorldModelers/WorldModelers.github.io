@@ -9,11 +9,11 @@ nav_order: 1
 
 # Contents
 * [Integrated system](#integrated-system)
-* [Ingestion + readers + assembly](#ingestion-readers-assembly)
+* [Reading + integration/assembly](#reading-integration-assembly)
 * [Ingestion only](#ingestion-only)
 
 <a id="integrated-system"></a>
-## [Integrated system](index.html#integrated-system)
+## [Integrated system](../reading-assembly.html#running-the-integrated-system)
 
 <a id="running-dart"></a>
 ### 1. Running CREATE
@@ -297,14 +297,14 @@ all relevant clusters into your taxonomy.
 When the curation process is complete, return to the taxonomy view by clicking the "Taxonomy" tab at the top of the screen. From there 
 you can publish the taxonomy to the desired tenant by following the steps detailed in [Ontology Management](#ontology-management) above.
 
-<a id="ingestion-readers-assembly"></a>
-## [Ingestion + readers + assembly](index.html#ingestion-readers-assembly)
+<a id="reading-integration-assembly"></a>
+## [Reading + integration/assembly](../reading-assembly.html#reading--integrationassembly)
 
 The instructions for deploying and using DART for ingestion, reading, and assembly are no different than the above instructions for the 
 integrated system.
 
 <a id="ingestion-only"></a>
-## [Ingestion only](index.html#ingestion-only)
+## Ingestion only
 
 To run DART without reading and assembly, follow the instructions for deploying DART in the [Integrated System](#integrated-system) 
 section, but add the flag `--diab` to the DART-CLI command.]
