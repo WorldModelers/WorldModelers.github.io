@@ -10,7 +10,7 @@ nav_order: 1
 # Contents
 * [Integrated system](#integrated-system)
 * [Ingestion + readers + assembly(#ingestion-readers-assembly)
-* [Ingestion only]
+* [Ingestion only](#ingestion-only)
 
 <a id="integrated-system"></a>
 ## [Integrated system](index.html#integrated-system)
