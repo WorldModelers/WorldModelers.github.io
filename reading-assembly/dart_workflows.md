@@ -9,6 +9,8 @@ nav_order: 1
 
 # Contents
 * [Integrated system](#integrated-system)
+* [Ingestion + readers + assembly(#ingestion-readers-assembly)
+* [Ingestion only]
 
 <a id="integrated-system"></a>
 ## [Integrated system](index.html#integrated-system)
@@ -143,6 +145,7 @@ this button will remove the tenant.
   <img src="../images/dart/remove-tenant.png">
 </p>
 
+<a id="ontology-management"></a>
 ### 3. Ontology Management
 
 Once any tenants have been defined in DART, it is necessary to provide them with ontologies so that submitted 
@@ -174,6 +177,11 @@ Once an acceptable ontology is loaded in the editor, the user can publish it to 
 <p align="center">
   <img src="../images/dart/ontology-publication.png" width="350">
 </p>
+
+It is also possible to defer this step until after document ingestion. Once an ontology has been published, all 
+currently ingested documents will be resubmitted in bulk to the readers with the new ontology. Deferring ontology 
+creation until after document ingestion makes sense if you plan to follow the ["Ontology-in-a-Day"](#oiad) workflow, 
+which depends on an existing corpus of documents.
 
 ### 4. Document Submission
 
@@ -245,4 +253,59 @@ will also be propagated to the readers.
 <p align="center">
   <img src="../images/dart/forklift-submission.png">
 </p>
+
+### 5. Ontology in a Day (Optional)
+
+DART includes a set of tools for rapidly building or extending an ontology by a process of *concept discovery* and *clustering*, 
+which extracts clusters of semantically similar relevant clusters from an ingested corpus and exposes them to the user in a 
+manner that allows efficient incorporation into the taxonomy.
+
+This tool can be accessed by navigating to *Concepts Explorer* and clicking on the *Clusters* tab at the top of the screen:
+
+
+Prior to clustering, the *Clusters* view will display a loading spinner as it tries to load non-existant clusters. To generate clusters, 
+click the "Discover Concepts" dropdown and select the tenant that you wish to build your taxonomy against (select "global" to use 
+all documents). Clicking the confirmation button in the subsequent popup will kick off the initial clustering process.
+
+At this point you should see the loading spinner again. Once the clustering process is complete, the spinner should be replaced by
+a new clustering display. Use the navigation buttons at the top of the view to browse through the clusters and, when desired, reject 
+the current cluster on the way.
+
+Use the cluster panel to view the concepts within the current cluster and accept or reject them. Accepting a cluster will by default 
+create a new concept within the working taxonomy within a root-level branch called "clusters". The new concept's name will be the 
+most highly ranked concept within the cluster. To choose a different concept as the representative name, click the label icon next to 
+the desired concept within the cluster.
+
+To add clustered concepts to existing concepts within the taxonomy, use the tools to the right of the cluster. The clustering service 
+provides a list of concepts within the taxonomy most likely to correspond to the current cluster. These are displayed in a list; 
+clicking one will display the concept node in a separate panel to the right. Once a node is selected, concepts accepted from a cluster 
+will be added to it as "examples." You can also search for existing nodes in the taxonomy by typing keywords in the search box above 
+the list of recommended nodes.
+
+After making substantial changes to the taxonomy through cluster curation, the current taxonomy will depart substantially from the 
+taxonomy used during the initial clustering. There are several consequences of this: first, the recommended nodes provided by the 
+clustering service may not correspond to nodes in the current taxonomy; second, the recommended nodes might not reflect new nodes 
+in the taxonomy that might be more similar to the current cluster; and finally, the scoring of clusters will be inaccurate. To bring 
+the clustering output in line with the current state of the taxonomy, click the refresh icon on the right-hand side of the control 
+buttons at the top of the clustering view.
+
+Once the current list of clusters has been curated to your satisfaction, you can click the "Recluster" button at the top the clustering 
+view to start a new job to recluster all of the concepts that haven't been accepted or rejected. This process should take a few minutes.
+When the new clusters appear, you can repeat the above steps as many times as needed until you are confident you have incorporated 
+all relevant clusters into your taxonomy.
+
+When the curation process is complete, return to the taxonomy view by clicking the "Taxonomy" tab at the top of the screen. From there 
+you can publish the taxonomy to the desired tenant by following the steps detailed in [Ontology Management](#ontology-management) above.
+
+<a id="ingestion-readers-assembly"></a>
+## [Ingestion + readers + assembly](index.html#ingestion-readers-assembly)
+
+The instructions for deploying and using DART for ingestion, reading, and assembly are no different than the above instructions for the 
+integrated system.
+
+<a id="ingestion-only"></a>
+## [Ingestion only](index.html#ingestion-only)
+
+To run DART without reading and assembly, follow the instructions for deploying DART in the [Integrated System](#integrated-system) 
+section, but add the flag `--diab` to the DART-CLI command.]
 
