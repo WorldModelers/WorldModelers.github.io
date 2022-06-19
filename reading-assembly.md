@@ -59,7 +59,7 @@ to component technologies before moving onto full integration, or for
 situations where only a subset of component systems are needed.
 
 <p align="center">
-  <img src="images/workflows.png" width="500">
+  <img src="images/reading_assembly/workflows.png" width="500">
 </p>
 
 ## Step-by-step tutorials

@@ -129,32 +129,34 @@ containing our output is `/data/indra/tutorial`.
 To interact with the assembled knowledge base on Causemos, we need to do the following steps.
 
 We first need to clone the Causemos quicstart repo and run a set of Docker containers:
-```
+
+```bash
 cd /data
 git clone https://github.com/uncharted-causemos/quickstart.git
 cd quickstart/app-kb
 ```
 
 In this folder, edit `docker-compose.yml` and under the `anansi` block, add the following volume definition:
-```
+
+```yaml
 ...
-     ports:                                                                      
-       - "6000:6000"                                                             
-     volumes:                                                                    
-         - /data:/data                                      
+     ports:
+       - "6000:6000"
+     volumes:
+         - /data:/data
 ```
 where the first instance of `/data` refers to our working folder in this tutorial and
 `/data` is the path at which Causemos' anansi Docker will see this folder mounted.
 
 We can now run the Causemos dockers as:
 
-```
+```bash
 docker-compose up -d
 ```
 
 We next need to export the processed documents from DART and convert it to a format Causemos can use.
 
-```
+```bash
 cd /data
 curl -XGET -H "Accept: application/zip" "http://localhost/dart/api/v1/cdrs/archive" -o raw_data.zip
 unzip -j raw_data.zip -d dart_cdrs
@@ -182,6 +184,10 @@ enter "Tutorial" for the `Name`, and select "Tutorial" under `Knowledge Base`, t
 on `Save & Finish`. Once the project is ready, click on "+ Create CAG" and click "Save" on the
 dialogue that pops up. Now click on the "Search Knowledge Base" button on top and then on "Graph"
 to see the graphical view of the KB.
+
+<p align="center">
+  <img src="images/reading_assembly/tutorial_causemos_food_security.png" width="500">
+</p>
 
 ## 7 (OPTIONAL). Interact with assembled knowledge base programmatically
 
