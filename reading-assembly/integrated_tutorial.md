@@ -69,7 +69,8 @@ We first download the ontology to `/data/ontology.yml`
 wget https://raw.githubusercontent.com/WorldModelers/Ontologies/master/CompositionalOntology_metadata.yml -O /data/ontology.yml
 ```
 
-then open the browser, go to `http://localhost` to open the DART UI.
+We can now open the browser, and go to the DART UI which is available at `http://localhost`.
+
 We follow these steps to upload and publish the ontology we selected:
 
 1. In the menu, select `Concepts Explorer`
