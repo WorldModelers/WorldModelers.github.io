@@ -141,10 +141,10 @@ In this folder, edit `docker-compose.yml` and under the `anansi` block, add the 
      ports:                                                                      
        - "6000:6000"                                                             
      volumes:                                                                    
-         - /data:/indra_data                                      
+         - /data:/data                                      
 ```
-where `/data` refers to our working folder in this tutorial and `/indra_data` is the path at which
-Causemos' anansi Docker will see this folder mounted.
+where the first instance of `/data` refers to our working folder in this tutorial and
+`/data` is the path at which Causemos' anansi Docker will see this folder mounted.
 
 We can now run the Causemos dockers as:
 
@@ -171,11 +171,17 @@ and the processed documents from DART.
 ```
 curl -XPOST -H "Content-type: application/json" http://localhost:6000/kb -d'
 {
-  "indra": "file:///localhost:4005/pipeline-test/indra",
-  "dart": "http://10.64.16.209:4005/pipeline-test/dart/july-sample.jsonl"
+  "indra": "file:///data/data/indra/tutorial",
+  "dart": "file:///data/dart_cdr.json"
 }
 '
 ```
+
+We can now go to http://localhost:3003, the main Causemos UI. Clikc on `New Analysis Project` and
+enter "Tutorial" for the `Name`, and select "Tutorial" under `Knowledge Base`, then click
+on `Save & Finish`. Once the project is ready, click on "+ Create CAG" and click "Save" on the
+dialogue that pops up. Now click on the "Search Knowledge Base" button on top and then on "Graph"
+to see the graphical view of the KB.
 
 ## 7 (OPTIONAL). Interact with assembled knowledge base programmatically
 
