@@ -69,7 +69,7 @@ We first download the ontology to `/data/ontology.yml`
 wget https://raw.githubusercontent.com/WorldModelers/Ontologies/master/CompositionalOntology_metadata.yml -O /data/ontology.yml
 ```
 
-We can now open the browser, and go to the DART UI which is available at `http://localhost`.
+We can now open the browser, and go to the DART UI which is available at http://localhost.
 
 We follow these steps to upload and publish the ontology we selected:
 
@@ -124,8 +124,60 @@ Note that the path here is relative to INDRA's mounted folder (
 host machine) within our chosen working base folder, so the path to the folder
 containing our output is `/data/indra/tutorial`.
 
+## 6. Interact with assembled knowledge base in Causemos HMI
 
-## 6. Interact with assembled knowledge base
+To interact with the assembled knowledge base on Causemos, we need to do the following steps.
+
+We first need to clone the Causemos quicstart repo and run a set of Docker containers:
+```
+cd /data
+git clone https://github.com/uncharted-causemos/quickstart.git
+cd quickstart/app-kb
+```
+
+In this folder, edit `docker-compose.yml` and under the `anansi` block, add the following volume definition:
+```
+...
+     ports:                                                                      
+       - "6000:6000"                                                             
+     volumes:                                                                    
+         - /data:/indra_data                                      
+```
+where `/data` refers to our working folder in this tutorial and `/indra_data` is the path at which
+Causemos' anansi Docker will see this folder mounted.
+
+We can now run the Causemos dockers as:
+
+```
+docker-compose up -d
+```
+
+We next need to export the processed documents from DART and convert it to a format Causemos can use.
+
+```
+cd /data
+curl -XGET -H "Accept: application/zip" "http://localhost/dart/api/v1/cdrs/archive" -o raw_data.zip
+unzip -j raw_data.zip -d dart_cdrs
+rm dart_cdr.json
+for f in dart_cdrs/*.json; do
+  cat $f >> dart_cdr.json
+  echo >> dart_cdr.json
+done
+```
+
+Once this file is ready, we can send a request to Causemos to ingest the assembled knowledge from INDRA
+and the processed documents from DART.
+
+```
+curl -XPOST -H "Content-type: application/json" http://localhost:6000/kb -d'
+{
+  "indra": "file:///localhost:4005/pipeline-test/indra",
+  "dart": "http://10.64.16.209:4005/pipeline-test/dart/july-sample.jsonl"
+}
+'
+```
+
+## 7 (OPTIONAL). Interact with assembled knowledge base programmatically
 
 You can now load the assembled knowledge base into Causemos or
 interact with it directly in e.g., Python. In this example, we end up with
