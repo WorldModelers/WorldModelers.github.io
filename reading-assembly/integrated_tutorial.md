@@ -83,9 +83,10 @@ We follow these steps to upload and publish the ontology we selected:
 ## 4. Upload the documents for processing
 
 We will now upload a number of documents and submit them for processing.
-In the DART UI menu, select `Document upload`, and select the first
-10 documents in the `world_modelers_demo_docs/raw_docs/mitre` folder,
-then click the `Submit` button to upload and start processing
+In the DART UI menu, select `Document upload`, and then click on the "CHOOSE FILES" button.
+Here, select the first 10 documents in the `world_modelers_demo_docs/raws/mitre` folder,
+and then click Open. On the website, you should see "10 files selected for upload", and can
+click the `SUBMIT" button to upload and start processing
 these documents. Note that even though we are uploading 10 documents,
 only 9 make it through processing.
 
