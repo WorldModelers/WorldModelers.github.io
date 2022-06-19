@@ -73,8 +73,8 @@ then open the browser, go to `http://localhost` to open the DART UI.
 We follow these steps to upload and publish the ontology we selected:
 
 1. In the menu, select `Concepts Explorer`
-2. Click `Choose Ontology File` and then `Upload Ontology`
-3. Select the file we saved to `/data/ontology.yml`
+2. Click `Choose Taxonomy File` and then select the file we saved to `/data/ontology.yml`
+3. Click on the `Upload Taxonomy` button
 4. Click the `Stage current` button, then click `Proceed`
 5. Click the `Publish staged` button, the click `Proceed`
 
