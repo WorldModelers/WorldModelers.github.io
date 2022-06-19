@@ -186,14 +186,14 @@ dialogue that pops up. Now click on the "Search Knowledge Base" button on top an
 to see the graphical view of the KB.
 
 <p align="center">
-  <img src="images/reading_assembly/tutorial_causemos_food_security.png" width="500">
+  <img src="../images/reading_assembly/tutorial_causemos_food_security.png" width="500">
 </p>
 
 ## 7 (OPTIONAL). Interact with assembled knowledge base programmatically
 
-You can now load the assembled knowledge base into Causemos or
-interact with it directly in e.g., Python. In this example, we end up with
-1,686 assembled statements supported by 1,920 evidences.
+You can also analyze the assembled knowledge base directly in e.g., Python.
+In this tutorial, our knowledge base has 1,686 assembled statements supported
+by 1,920 evidences.
 
 Below, we find the top 5 influencers of food security
 
