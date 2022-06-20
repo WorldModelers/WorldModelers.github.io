@@ -49,7 +49,7 @@ To load knowledge and document data into Causemos we need
 - INDRA dataset
 - DART CDR dataset
 
-To start the data ingestion, use the curl command, replace the `indra` and `dart` with the appropriate paths, note they can be URLs or file paths (file://).
+To start the data ingestion, use the curl command, replace the `indra` and `dart` with the appropriate paths. Note `file://` protocol is suppoted but you will need to add a shared volume mount to the anansi-image in the docker-compose file.
 
 ```
 #!/usr/bin/env bash
