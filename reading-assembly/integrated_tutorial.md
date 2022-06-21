@@ -18,7 +18,7 @@ and can be replaced by another appropriate local path.
 This tutorial assumes that [Docker](https://www.docker.com/) and 
 [docker-compose](https://docs.docker.com/compose/) are installed, and
 that a Python 3.9+ environment is available. Finally, running this tutorial
-requires  at least 64 GB or RAM.
+requires  at least 64 GB of RAM.
 
 ## 1. Download input documents
 
@@ -179,7 +179,7 @@ curl -XPOST -H "Content-type: application/json" http://localhost:6000/kb -d'
 '
 ```
 
-We can now go to http://localhost:3003, the main Causemos UI. Clikc on `New Analysis Project` and
+We can now go to http://localhost:3003, the main Causemos UI. Click on `New Analysis Project` and
 enter "Tutorial" for the `Name`, and select "Tutorial" under `Knowledge Base`, then click
 on `Save & Finish`. Once the project is ready, click on "+ Create CAG" and click "Save" on the
 dialogue that pops up. Now click on the "Search Knowledge Base" button on top and then on "Graph"
