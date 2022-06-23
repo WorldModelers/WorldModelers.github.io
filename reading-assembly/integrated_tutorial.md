@@ -100,35 +100,35 @@ We will use the INDRA World Assembly Dashboard to monitor
 which documents are available (i.e., have completed
 reading) for assembly into a causal knowledge base.
 
-To do this, go to http://localhost:9444/dashboard. Here, without
-changing anything in the form, click on "Find reader output records".
+To do this, go to [http://localhost:9444/dashboard](http://localhost:9444/dashboard). Here, without
+changing anything in the form, click on `Find reader output records`.
 We will wait until we have outputs for all 9 processed documents available from
-both the Eidos and Hume systems (you can click on "Find reader output records"
+both the Eidos and Hume systems (you can click on `Find reader output records`
 any time to check again for the status of reading). It should
 take about 30 minutes for all reading to be ready.
 
 Once all the reading is done, we will run assembly. To do this, scroll
 down on the INDRA World Assembly Dashboard and fill out the
 form as follows:
-* Corpus ID: tutorial
-* Corpus display name: Tutorial knowledge base
-* Corpus description: Tutorial knowledge base
-* Output base folder: /data
+* `Corpus ID`: tutorial
+* `Corpus display name`: Tutorial knowledge base
+* `Corpus description`: Tutorial knowledge base
+* `Output base folder`: /data
 
 The click on `Run assembly`. Once finished (this should take
 just a few seconds for a corpus this size), the page will reload
 and display "Assembly successful! Outputs (statements.json and metadata.json) 
 written to /data/tutorial." in a banner on top.
 Note that the path here is relative to INDRA's mounted folder (
-`/data` within the INDRA World container is mapped to `/data/indra/` on the
+`/data` within the INDRA World container is mapped to `/data/data/indra/` on the
 host machine) within our chosen working base folder, so the path to the folder
-containing our output is `/data/indra/tutorial`.
+containing our output is `/data/data/indra/tutorial`.
 
 ## 6. Interact with assembled knowledge base in Causemos HMI
 
 To interact with the assembled knowledge base on Causemos, we need to do the following steps.
 
-We first need to clone the Causemos quicstart repo and run a set of Docker containers:
+We first need to clone the Causemos quickstart repo and run a set of Docker containers:
 
 ```bash
 cd /data
@@ -179,10 +179,10 @@ curl -XPOST -H "Content-type: application/json" http://localhost:6000/kb -d'
 '
 ```
 
-We can now go to http://localhost:3003, the main Causemos UI. Click on `New Analysis Project` and
-enter "Tutorial" for the `Name`, and select "Tutorial" under `Knowledge Base`, then click
-on `Save & Finish`. Once the project is ready, click on "+ Create CAG" and click "Save" on the
-dialogue that pops up. Now click on the "Search Knowledge Base" button on top and then on "Graph"
+We can now go to [http://localhost:3003](http://localhost:3003), the main Causemos UI. Click on `New Analysis Project` and
+enter "Tutorial" for the `Name`, and select "Tutorial knowledge base" under `Knowledge Base`, then click
+on `Save & Finish`. Once the project is ready, click on `+ Create CAG` and click `Save` on the
+dialogue that pops up. Now click on the `Search Knowledge Base` button on top and then on `Graph`
 to see the graphical view of the KB.
 
 <p align="center">
@@ -201,7 +201,7 @@ Below, we find the top 5 influencers of food security
 from indra.statements import stmts_from_json_file
 
 # Load statements from JSON-L
-stmts = stmts_from_json_file('/data/indra/tutorial/statements.json', format='jsonl')
+stmts = stmts_from_json_file('/data/data/indra/tutorial/statements.json', format='jsonl')
 
 # Sort by evidence
 stmts = sorted(stmts, key=lambda x: len(x.evidence), reverse=True)
