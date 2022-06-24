@@ -126,60 +126,12 @@ containing our output is `/data/data/indra/tutorial`.
 
 ## 6. Interact with assembled knowledge base in Causemos HMI
 
-To interact with the assembled knowledge base on Causemos, we need to do the following steps.
+After assembly is complete, Causemos discovers and loads the assembled knowledge base
+within a minute. We can now go to [http://localhost:3003](http://localhost:3003), the main Causemos UI
+where we should see a notification about a new knowledge base being available. If not available yet,
+wait and refresh the page.
 
-We first need to clone the Causemos quickstart repo and run a set of Docker containers:
-
-```bash
-cd /data
-git clone https://github.com/uncharted-causemos/quickstart.git
-cd quickstart/app-kb
-```
-
-In this folder, edit `docker-compose.yml` and under the `anansi` block, add the following volume definition:
-
-```yaml
-...
-     ports:
-       - "6000:6000"
-     volumes:
-         - /data:/data
-```
-where the first instance of `/data` refers to our working folder in this tutorial and
-`/data` is the path at which Causemos' anansi Docker will see this folder mounted.
-
-We can now run the Causemos dockers as:
-
-```bash
-docker-compose up -d
-```
-
-We next need to export the processed documents from DART and convert it to a format Causemos can use.
-
-```bash
-cd /data
-curl -XGET -H "Accept: application/zip" "http://localhost/dart/api/v1/cdrs/archive" -o raw_data.zip
-unzip -j raw_data.zip -d dart_cdrs
-rm dart_cdr.json
-for f in dart_cdrs/*.json; do
-  cat $f >> dart_cdr.json
-  echo >> dart_cdr.json
-done
-```
-
-Once this file is ready, we can send a request to Causemos to ingest the assembled knowledge from INDRA
-and the processed documents from DART.
-
-```
-curl -XPOST -H "Content-type: application/json" http://localhost:6000/kb -d'
-{
-  "indra": "file:///data/data/indra/tutorial",
-  "dart": "file:///data/dart_cdr.json"
-}
-'
-```
-
-We can now go to [http://localhost:3003](http://localhost:3003), the main Causemos UI. Click on `New Analysis Project` and
+Once the KB is available, click on `New Analysis Project` and
 enter "Tutorial" for the `Name`, and select "Tutorial knowledge base" under `Knowledge Base`, then click
 on `Save & Finish`. Once the project is ready, click on `+ Create CAG` and click `Save` on the
 dialogue that pops up. Now click on the `Search Knowledge Base` button on top and then on `Graph`
