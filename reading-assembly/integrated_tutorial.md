@@ -87,8 +87,7 @@ In the DART UI menu, select `Document upload`, and then click on the `CHOOSE FIL
 Here, select the first 10 documents in the `world_modelers_demo_docs/raws/mitre` folder,
 and then click Open. On the website, you should see "10 files selected for upload", and can
 click the `SUBMIT` button to upload and start processing
-these documents. Note that even though we are uploading 10 documents,
-only 9 make it through processing.
+these documents.
 
 At this point the documents have been submitted for
 processing to extract text content and metadata, and are then
@@ -102,7 +101,7 @@ reading) for assembly into a causal knowledge base.
 
 To do this, go to [http://localhost:9444/dashboard](http://localhost:9444/dashboard). Here, without
 changing anything in the form, click on `Find reader output records`.
-We will wait until we have outputs for all 9 processed documents available from
+We will wait until we have outputs for all processed documents available from
 both the Eidos and Hume systems (you can click on `Find reader output records`
 any time to check again for the status of reading). It should
 take about 30 minutes for all reading to be ready.
