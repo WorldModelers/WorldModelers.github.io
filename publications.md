@@ -25,25 +25,22 @@ This page contains the full list of publications authored by teams contributing 
 
 ### Raytheon BBN
 
-* Rapid Customization for Event Extraction
-https://partners.mitre.org/sites/worldmodelers/BBN/Shared%20Documents/Monthly%20Tech%20Reports/rapid_event_customization_with_HIL.pdf?Web=1
+* Rapid Customization for Event Extraction. DOI: https://doi.org/10.18653/v1/P19-3006
 * [Submitted] White paper on learning ontologies and constructing an event timeline/database
-* “A Case Study on Learning a Uniﬁed Encoder of Relations”: 
-https://partners.mitre.org/sites/worldmodelers/BBN/Shared%20Documents/Monthly%20Tech%20Reports/A%20Case%20Study%20on%20Learning%20a%20Uni%EF%AC%81ed%20Encoder%20of%20Relations.pdf?Web=1
+* A Case Study on Learning a Uniﬁed Encoder of Relations. DOI: https://doi.org/10.18653/v1/W18-6126
 * “Event Detection with Minimal Supervision”, submitted to NAACL 2019:
-https://partners.mitre.org/sites/worldmodelers/BBN/Shared%20Documents/Monthly%20Tech%20Reports/event_extraction_naacl2019.pdf?Web=1
+[link forthcoming]
 * The following two papers were accepted by the 2019 Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on 
 Natural Language Processing (EMNLP-IJCNLP 2019).
     * "Machine Reading for Interventions." Bonan Min, Yee Seng Chan, Haoling Qiu and Joshua Fasching. Towards Machine Reading for Interventions from Humanitarian-Assistance Program Literature. EMNLP-IJCNLP 2019.
     * We demonstrated that aggregated event counts (extracted from US-based streaming news articles) correlated well with socio-economic indicators such as unemployment rate, Economic Policy Uncertainty, and VIX. Bonan Min and Xiaoxi Zhao. Measure Country-Level Socio-Economic Indicators with Streaming News: An Empirical Study. EMNLP-IJCNLP 2019.
-* We submitted a paper summarizing our TDP work to ACL-2020. "Can BERT improve temporal dependency parsing?" Hayley Ross, Jonathon Cai, and Bonan Min. Submitted to ACL-2020. https://partners.mitre.org/sites/worldmodelers/BBN/Shared%20Documents/Monthly%20Tech%20Reports/Temporal_dependency_parsing.pdf?d=w3fb850a8099d48d193e5397204b1b925
-* Publication on how information extraction has changed over the past 25 years, connecting to evaluations organized by the US Government.  "Twenty-five years of information extraction." Ralph Grishman. In Natural Language Engineering (2019), 25, pp. 677-692. 
-https://partners.mitre.org/sites/worldmodelers/BBN/Shared%20Documents/Monthly%20Tech%20Reports/nyu_paper_twentyfive_years_of_information_extraction.pdf?d=wb5fbcc600144455b945b9e1703be5ec0
+* We submitted a paper summarizing our TDP work to ACL-2020. Can BERT improve temporal dependency parsing? Hayley Ross, Jonathon Cai, and Bonan Min. Submitted to ACL-2020. [link forthcoming]
+* Publication on how information extraction has changed over the past 25 years, connecting to evaluations organized by the US Government.  "Twenty-five years of information extraction." Ralph Grishman. In Natural Language Engineering (2019), 25, pp. 677-692. DOI: https://doi.org/10.1017/S1351324919000512
 * Master's thesis titled “On zero-shot transfer learning for event extraction”, which shows that the use of paradigmatic event role names and event type names have significant impact on the success of the zero-shot approach.
-https://partners.mitre.org/sites/worldmodelers/BBN/Shared%20Documents/Monthly%20Tech%20Reports/nyu_masters_thesis_haroon_shaheer.pdf?d=w57d9ec15721248f9821620a467d60cc5
+https://cs.nyu.edu/media/publications/haroon_shaheer.pdf
 * We submitted a paper summarizing or sub-event relation extraction work to ACL-2020.
-"Weakly Supervised Subevent Knowledge Acquisition." Wenlin Yao, Zeyu Dai, Maitreyi Ramaswamy, Ruihong Huang and Bonan Min. Submitted to ACL 2020
-https://partners.mitre.org/sites/worldmodelers/BBN/Shared%20Documents/Monthly%20Tech%20Reports/Weakly%20Supervised%20Subevent%20Knowledge%20Acquisition.pdf?d=w0858e6e15ffc41988347ccebb52b3a65
+"Weakly Supervised Subevent Knowledge Acquisition." Wenlin Yao, Zeyu Dai, Maitreyi Ramaswamy, Ruihong Huang and Bonan Min. Submitted to ACL 2020. DOI:
+https://doi.org/10.18653/v1/2020.emnlp-main.430
 * We submitted the few-shot event extraction work to LREC-2020:
 "Towards Few-Shot Event Mention Retrieval: An Evaluation Framework and A Siamese Network Approach." Bonan Min, Yee Seng Chan, and Lingjun Zhao. Submitted to LREC-2020
 * Our work on few-shot event extraction was selected for publication at LREC-2020:
@@ -56,20 +53,21 @@ https://partners.mitre.org/sites/worldmodelers/BBN/Shared%20Documents/Monthly%20
 * Exploring Interpretability in Event Extraction: Multitask Learning of a Neural Event Classifier and an Explanation Decoder. Tang, Z.; Hahn-Powell, G.; and Surdeanu, M. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: Student Research Workshop, Seattle, United States, July 2020.
 * Data and Model Distillation as a Solution for Domain-transferable Fact Verification.Mithun, M.; Suntwal, S.; and Surdeanu, M. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, 2021.
 * Interpretability Rules: Jointly Bootstrapping a Neural Relation Extractor with an Explanation Decoder. Tang, Z.; and Surdeanu, M. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: TrustNLP Workshop, 2021.
-* If You Want to Go Far Go Together: Unsupervised Joint Candidate Evidence Retrieval for Multi-hop Question Answering. Yadav, V.; Bethard, S.; and Surdeanu, M. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 4571–4581, Online, June 2021. Association for Computational Linguistics [Acceptance rate 26%]
+* If You Want to Go Far Go Together: Unsupervised Joint Candidate Evidence Retrieval for Multi-hop Question Answering. Yadav, V.; Bethard, S.; and Surdeanu, M. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 4571–4581, Online, June 2021. Association for Computational Linguistics
 
 ## Qualitative Analysis
 
 ### University of Pittsburgh
 * Sayed, K., Telmer, C. A., Butchy, A. A., & Miskov-Zivanov, N. (2017, September). Recipes for translating big data machine reading to executable cellular signaling models. In International Workshop on Machine Learning, Optimization, and Big Data (pp. 1-15). Springer, Cham.
-* Sayed, K., Kuo, Y. H., Kulkarni, A., & Miskov-Zivanov, N. (2017, December). DiSH simulator: Capturing dynamics of cellular signaling with heterogeneous knowledge. In 2017 Winter Simulation Conference (WSC) (pp. 896-907). IEEE. doi: 10.1109/WSC.2017.8247841.
+* Sayed, K., Kuo, Y. H., Kulkarni, A., & Miskov-Zivanov, N. (2017, December). DiSH simulator: Capturing dynamics of cellular signaling with heterogeneous knowledge. In 2017 Winter Simulation Conference (WSC) (pp. 896-907). IEEE. DOI: http://doi.org/10.1109/WSC.2017.8247841.
 * Zhou, G., Liang, K. W., & Miskov-Zivanov, N. (2018, August). Sensitivity Analysis of Discrete Models and Application in Biological Networks. In Proceedings of the 2018 ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics (pp. 605-606).
 * (Lecture) N. Miskov-Zivanov, “Dynamic System Explanation, DySE, a framework that evolves to reason about complex systems,” Artificial Intelligence for Data Discovery and Reuse (AIDR) 2019.
 * (Poster) K. Sayed, "Stochastic Simulations of Hybrid Models with DiSH," Modeling the World's Systems (MWS) 2019.
 * (Poster) Y. Ahmed, "Automated assembly of models: Applications in biology and world systems," Modeling the World's Systems (MWS) 2019.
 * Telmer, C. A., Sayed, K., Butchy, A., Bocan, K. N., Holtzapple, E., Hansen, C. E., ... & Miskov-Zivanov, N. (2019, May). Dynamic system explanation: DySE, a framework that evolves to reason about complex systems-lessons learned. In Proceedings of the Conference on Artificial Intelligence for Data Discovery and Reuse (pp. 1-10).
-* Zhou, G., Liang, K. W., & Miskov-Zivanov, N. (2019). Intervention Pathway Discovery via Context-Dependent Dynamic Sensitivity Analysis. arXiv preprint arXiv:1902.03216.
-* Andjelkovic, S., & Miskov-Zivanov, N. (2021, December). DiSH-trend: Intervention Modeling Simulator That Accounts for Trend Influences. In Winter Simulation Conference (WSC). IEEE. doi:10.1109/WSC52266.2021.9715401 
+* Zhou, G., Liang, K. W., & Miskov-Zivanov, N. (2019). Intervention Pathway Discovery via Context-Dependent Dynamic Sensitivity Analysis. arXiv preprint 
+https://doi.org/10.48550/arXiv.1902.03216.
+* Andjelkovic, S., & Miskov-Zivanov, N. (2021, December). DiSH-trend: Intervention Modeling Simulator That Accounts for Trend Influences. In Winter Simulation Conference (WSC). IEEE. DOI: https://doi.org/10.1109/WSC52266.2021.9715401 
 
 
 ## Quantitative Analysis
