@@ -18,7 +18,7 @@ has_toc: true
     - [Kimetrica](#kimetrica)
     - [Stanford/Atlas AI](#stanfordatlas-ai)
     - [University of California, Santa Barbara (UCSB)](#university-of-california-santa-barbara-ucsb)
-    - [University of Southern California (USC) Information Sciences Institite (ISI)](#university-of-southern-california-usc-information-sciences-institite-isi)
+    - [University of Southern California (USC) Information Sciences Institute (ISI)](#university-of-southern-california-usc-information-sciences-institute-isi)
 
 # List of Publications by Functional Area and Contributing Team
 This page contains the full list of publications authored by teams contributing to the World Modelers program.
@@ -32,7 +32,7 @@ This page contains the full list of publications authored by teams contributing 
 
 * Rapid Customization for Event Extraction. DOI: https://doi.org/10.18653/v1/P19-3006
 * [Submitted] White paper on learning ontologies and constructing an event timeline/database
-* A Case Study on Learning a Uniﬁed Encoder of Relations. DOI: https://doi.org/10.18653/v1/W18-6126
+* A Case Study on Learning a Unified Encoder of Relations. DOI: https://doi.org/10.18653/v1/W18-6126
 * “Event Detection with Minimal Supervision”, submitted to NAACL 2019:
 [link forthcoming]
 * The following two papers were accepted by the 2019 Conference on Empirical Methods in Natural Language Processing and 9th International Joint Conference on 
@@ -122,7 +122,7 @@ Africa. http://web.stanford.edu/~mburke/papers/McGuirkBurke2017_NBER.pdf
 * Submitted paper to Scientific Data: "CHIRPS-compatible NCEP GEFS precipitation forecasts for advancing early warning capabilities" by Laura Harrison, Martin Landsfeld, Gregory Husak, Frank Davenport, Shrad Shukla, Will Turner, Pete Peterson, Chris Funk
 
 
-### University of Southern California (USC) Information Sciences Institite (ISI)
+### University of Southern California (USC) Information Sciences Institute (ISI)
 
 * "Artificial Intelligence for Water Resources Management: Towards Efficient Integration", Invited talk by Yolanda Gil at the Annual Meeting of the American Association for the Advancement of Science (AAAS), special session on “Finding Water Management Solutions With Artificial Intelligence”, February 17, 2018.
 * “MINT: Model Integration Through Knowledge-Powered Data and Process Composition,” Yolanda Gil, Kelly Cobourn, Ewa Deelman, Chris Duffy, Rafael Ferreira da Silva, Armen Kemanian, Craig Knoblock, Vipin Kumar, Scott Peckham, Lucas Carvalho, Yao-Yi Chiang, Daniel Garijo, Deborah Khider, Ankush Khandelwal, Minh Pahm, Jay Pujara, Varun Ratnakar, Maria Stoica, Binh Vu.  Submitted to the 9th International Congress on Environmental Modelling and Software, 2018. https://tinyurl.com/y7xluudu 
