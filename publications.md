@@ -7,21 +7,26 @@ has_toc: true
 ## Table of Contents
 - [List of Publications by Functional Area and Contributing Team](#list-of-publications-by-functional-area-and-contributing-team)
   - [Causal Knowledge Extraction and Assembly](#causal-knowledge-extraction-and-assembly)
+    - [Florida Institute for Human and Machine Cognition (IHMC)](#florida-institute-for-human-and-machine-cognition-ihmc)
     - [Raytheon BBN](#raytheon-bbn)
     - [University of Arizona](#university-of-arizona)
+    - [Multi-Institute Collaborations](#multi-institute-collaborations)
   - [Qualitative Analysis](#qualitative-analysis)
     - [University of Pittsburgh](#university-of-pittsburgh)
   - [Quantitative Analysis](#quantitative-analysis)
-    - [C2-P2](#c2-p2)
-    - [University of Southern California (USC) Information Sciences Institite (ISI)](#university-of-southern-california-usc-information-sciences-institite-isi)
+    - [Columbia, CSIRO, and PIK](#columbia-csiro-and-pik)
     - [Kimetrica](#kimetrica)
-    - [SRI, University of California, Santa Barbara (UCSB)](#sri-university-of-california-santa-barbara-ucsb)
-  - [Multi-Institute Collaborations](#multi-institute-collaborations)
+    - [Stanford/Atlas AI](#stanfordatlas-ai)
+    - [University of California, Santa Barbara (UCSB)](#university-of-california-santa-barbara-ucsb)
+    - [University of Southern California (USC) Information Sciences Institite (ISI)](#university-of-southern-california-usc-information-sciences-institite-isi)
 
 # List of Publications by Functional Area and Contributing Team
 This page contains the full list of publications authored by teams contributing to the World Modelers program.
 
 ## Causal Knowledge Extraction and Assembly
+
+### Florida Institute for Human and Machine Cognition (IHMC)
+*  Submitted paper on the Collaborative Dialogue Agent to a special issue on Conversational AI for AI Magazine
 
 ### Raytheon BBN
 
@@ -55,6 +60,12 @@ https://doi.org/10.18653/v1/2020.emnlp-main.430
 * Interpretability Rules: Jointly Bootstrapping a Neural Relation Extractor with an Explanation Decoder. Tang, Z.; and Surdeanu, M. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: TrustNLP Workshop, 2021.
 * If You Want to Go Far Go Together: Unsupervised Joint Candidate Evidence Retrieval for Multi-hop Question Answering. Yadav, V.; Bethard, S.; and Surdeanu, M. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 4571–4581, Online, June 2021. Association for Computational Linguistics
 
+### Multi-Institute Collaborations
+* (Submitted) [Two-Six, University of Arizona, Harvard Medical School, Raytheon BBN, Qntfy] Taxonomy Builder: a data-driven and user-centric tool for streamlining taxonomy construction
+* [University of Arizona, Harvard Medical School, University of Florida, Uncharted] Submitted modeling paper to Modeling the World’s Systems Conference 2019
+* [University of Arizona, Harvard Medical School, University of Florida, Uncharted] Submitted system demo papers describing Eidos and Delphi to NAACL-HLT 2019 and Modeling the World's Systems Conference 
+* [University of Arizona, Harvard Medical School] Eidos, INDRA, & Delphi: From free text to executable causal models. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)
+
 ## Qualitative Analysis
 
 ### University of Pittsburgh
@@ -72,7 +83,7 @@ https://doi.org/10.48550/arXiv.1902.03216.
 
 ## Quantitative Analysis
 
-### C2-P2
+### Columbia, CSIRO, and PIK
 
 * Kakinuma, K., M.J. Puma, Y. Hirabayashi, M. Tanoue, E.A. Baptista, and S. Kanae, 2020: Flood-induced population displacements in the world. Environ. Res. Lett., 15, no. 12, 124029, doi:10.1088/1748-9326/abc586.
 * Falkendal, T., C. Otto, J. Schewe, J. Jägermeyr, M. Konar, M. Kummu, B. Watkins, and M.J. Puma, 2021: Grain export restrictions during COVID-19 risk food insecurity in many low- and middle-income countries. Nat. Food, 2, no. 1, 11-14, doi:10.1038/s43016-020-00211-7.
@@ -84,6 +95,32 @@ https://doi.org/10.48550/arXiv.1902.03216.
 * In preparation: Mezuman K, Puma MJ, Concha Larrauri P, and Lall U. Applying Bayesian inference to model refugee movement. (In preparation.)
 * In preparation: Karakoc DB, Konar M, Varshney L, Puma MJ. Resilience and controllability of the US food systems. (In preparation)
 * In preparation: Schauberger B, Ostberg S: Global crop yield forecasting on high resolution several weeks ahead of harvest. (In preparation)
+
+### Kimetrica
+
+* CHIRTS -- We are close to re-submitting a paper on CHIRTS-daily to Scientific Data.
+We have revised CHIRTS-daily to use a different satellite input (ERA5 instead of
+MERRA2), have increased the accuracy of the previous product (based on validation
+from station data and external products). All of these results will be summarized in the paper. A new Usage Section focuses on a sample application in Ethiopia. 
+
+### Stanford/Atlas AI 
+* Eoin McGuirk and Marshall Burke (2017) The Economic Origins of Conflict in
+Africa. http://web.stanford.edu/~mburke/papers/McGuirkBurke2017_NBER.pdf
+
+### University of California, Santa Barbara (UCSB)
+
+* Paper submitted to NIPS
+* Paper presented at COMPASS conference
+* Davenport, F., L. Harrison, S. Shukla, G. Husak, C. Funk, and A. McNally. What is the Best Model Specification and Earth Observation Product for Predicting Regional Grain Yields in Food Insecure Countries? (In Review)
+* WRSI paper complete, being submitted now to either Science Advances or ERL
+* Submitted paper on predicting crop yield
+* Davenport, F. M., Harrison, L., Shukla, S., Husak, G., Funk, C., & McNally, A. (2019). “Using out-of-sample yield forecast experiments to evaluate which earth observation products best indicate end of season maize yields.” Environmental Research Letters, 14(12), 124095. doi: 10.1088/1748-9326/ab5ccd
+* Paper submitted to J. of Climate -Funk et al. (2019) The 1983-2016 Climate Hazards Infrared plus station high-resolution Tmax climate data record, In Review
+* Shukla, S., Husak, G., Turner, W., Davenport, F., Funk, C., Harrison, L., & Krell, N. (2021). “A slow rainy season onset is a reliable harbinger of drought in most food insecure regions in Sub-Saharan Africa.” PLoS ONE, 16(1), e0242883. doi: 10.1371/journal.pone.0242883
+* Paper accecped in PNAS:  Global Urban Population Exposure to Extreme Heat, -Tuholske et al. (forthcoming)
+* Davenport, F. M., Shukla, S., Turner, W., Funk, C., Krell, N., Harrison, L., Husak, G., Lee, D., & Peterson, S. (2021). Sending out an S.O.S: using start of rainy season indicators for market price forecasting to support famine early warning. Environmental Research Letters. 
+* Submitted paper to Scientific Data: "CHIRPS-compatible NCEP GEFS precipitation forecasts for advancing early warning capabilities" by Laura Harrison, Martin Landsfeld, Gregory Husak, Frank Davenport, Shrad Shukla, Will Turner, Pete Peterson, Chris Funk
+
 
 ### University of Southern California (USC) Information Sciences Institite (ISI)
 
@@ -112,35 +149,3 @@ https://doi.org/10.48550/arXiv.1902.03216.
 * Willard, J.; Jia, X.; Xu, S.; Steinbach, M.; and Kumar, V., Integrating physics-based modeling with machine learning: A survey, in Preprint.
 * Vu, B.; Knoblock, C.A.; Szekely, P.; Pham, M.; Pujara, J., A Graph-based Approach for Inferring Semantic Descriptions of Wikipedia Tables, in Proceedings of the International Semantic Web Conference, 2021.
 * Pham, M.; Knoblock, C.A.; Chen, M.; Vu, B.; Pujara, J., SPADE: A Semi-supervised Probabilistic Approach for Detecting Errors in Tables, in Proceedings of the 30th International Joint Conference on Artificial Intelligence (IJCAI), 2021.
-
-
-### Kimetrica
-
-* CHIRTS -- We are close to re-submitting a paper on CHIRTS-daily to Scientific Data.
-We have revised CHIRTS-daily to use a different satellite input (ERA5 instead of
-MERRA2), have increased the accuracy of the previous product (based on validation
-from station data and external products). All of these results will be summarized in the paper. A new Usage Section focuses on a sample application in Ethiopia. 
-
-### SRI, University of California, Santa Barbara (UCSB)
-
-* Paper submitted to NIPS
-* Paper presented at COMPASS conference
-* Davenport, F., L. Harrison, S. Shukla, G. Husak, C. Funk, and A. McNally. What is the Best Model Specification and Earth Observation Product for Predicting Regional Grain Yields in Food Insecure Countries? (In Review)
-* Eoin McGuirk and Marshall Burke (2017) The Economic Origins of Conflict in
-Africa.
-http://web.stanford.edu/~mburke/papers/McGuirkBurke2017_NBER.pdf
-* WRSI paper complete, being submitted now to either Science Advances or ERL
-* Submitted paper on predicting crop yield
-* Davenport, F. M., Harrison, L., Shukla, S., Husak, G., Funk, C., & McNally, A. (2019). “Using out-of-sample yield forecast experiments to evaluate which earth observation products best indicate end of season maize yields.” Environmental Research Letters, 14(12), 124095. doi: 10.1088/1748-9326/ab5ccd
-* Paper submitted to J. of Climate -Funk et al. (2019) The 1983-2016 Climate Hazards Infrared plus station high-resolution Tmax climate data record, In Review
-* Shukla, S., Husak, G., Turner, W., Davenport, F., Funk, C., Harrison, L., & Krell, N. (2021). “A slow rainy season onset is a reliable harbinger of drought in most food insecure regions in Sub-Saharan Africa.” PLoS ONE, 16(1), e0242883. doi: 10.1371/journal.pone.0242883
-* Paper accecped in PNAS:  Global Urban Population Exposure to Extreme Heat, -Tuholske et al. (forthcoming)
-* Davenport, F. M., Shukla, S., Turner, W., Funk, C., Krell, N., Harrison, L., Husak, G., Lee, D., & Peterson, S. (2021). Sending out an S.O.S: using start of rainy season indicators for market price forecasting to support famine early warning. Environmental Research Letters. 
-* Submitted paper to Scientific Data: "CHIRPS-compatible NCEP GEFS precipitation forecasts for advancing early warning capabilities" by Laura Harrison, Martin Landsfeld, Gregory Husak, Frank Davenport, Shrad Shukla, Will Turner, Pete Peterson, Chris Funk
-
-
-## Multi-Institute Collaborations
-* (Submitted) [Two-Six, University of Arizona, Harvard Medical School, Raytheon BBN, Qntfy] Taxonomy Builder: a data-driven and user-centric tool for streamlining taxonomy construction
-* [University of Arizona, Harvard Medical School, University of Florida, Uncharted] Submitted modeling paper to Modeling the World’s Systems Conference 2019
-* [University of Arizona, Harvard Medical School, University of Florida, Uncharted] Submitted system demo papers describing Eidos and Delphi to NAACL-HLT 2019 and Modeling the World's Systems Conference 
-* [University of Arizona, Harvard Medical School] Eidos, INDRA, & Delphi: From free text to executable causal models. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)
