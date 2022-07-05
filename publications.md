@@ -1,11 +1,11 @@
 ---
 layout: default
-title: World Modelers Publications
+title: Publications
 nav_order: 6
 has_toc: true
 ---
 ## Table of Contents
-- [Full List of World Modelers Publications](#full-list-of-world-modelers-publications)
+- [List of Publications by Functional Area and Contributing Team](#list-of-publications-by-functional-area-and-contributing-team)
   - [Causal Knowledge Extraction and Assembly](#causal-knowledge-extraction-and-assembly)
     - [Raytheon BBN](#raytheon-bbn)
     - [University of Arizona](#university-of-arizona)
@@ -18,7 +18,8 @@ has_toc: true
     - [SRI, University of California, Santa Barbara (UCSB)](#sri-university-of-california-santa-barbara-ucsb)
   - [Multi-Institute Collaborations](#multi-institute-collaborations)
 
-# Full List of World Modelers Publications
+# List of Publications by Functional Area and Contributing Team
+This page contains the full list of publications authored by teams contributing to the World Modelers program.
 
 ## Causal Knowledge Extraction and Assembly
 
