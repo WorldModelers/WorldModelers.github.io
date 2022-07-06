@@ -61,7 +61,7 @@ https://doi.org/10.18653/v1/2020.emnlp-main.430
 * If You Want to Go Far Go Together: Unsupervised Joint Candidate Evidence Retrieval for Multi-hop Question Answering. Yadav, V.; Bethard, S.; and Surdeanu, M. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 4571–4581, Online, June 2021. Association for Computational Linguistics
 
 ### Multi-Institute Collaborations
-* (Submitted) [Two-Six, University of Arizona, Harvard Medical School, Raytheon BBN, Qntfy] Taxonomy Builder: a data-driven and user-centric tool for streamlining taxonomy construction
+* (Submitted) [Two Six Technologies, University of Arizona, Harvard Medical School, Raytheon BBN, Qntfy] Taxonomy Builder: a data-driven and user-centric tool for streamlining taxonomy construction
 * [University of Arizona, Harvard Medical School, University of Florida, Uncharted] Submitted modeling paper to Modeling the World’s Systems Conference 2019
 * [University of Arizona, Harvard Medical School, University of Florida, Uncharted] Submitted system demo papers describing Eidos and Delphi to NAACL-HLT 2019 and Modeling the World's Systems Conference 
 * [University of Arizona, Harvard Medical School] Eidos, INDRA, & Delphi: From free text to executable causal models. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)
