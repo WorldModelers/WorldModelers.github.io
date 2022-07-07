@@ -80,6 +80,9 @@ Natural Language Processing (EMNLP-IJCNLP 2019).
 [https://doi.org/10.48550/arXiv.1902.03216](https://doi.org/10.48550/arXiv.1902.03216).
 * Andjelkovic, S., & Miskov-Zivanov, N. (2021, December). DiSH-trend: Intervention Modeling Simulator That Accounts for Trend Influences. In Winter Simulation Conference (WSC). IEEE. DOI: [https://doi.org/10.1109/WSC52266.2021.9715401](https://doi.org/10.1109/WSC52266.2021.9715401)
 
+### Uncharted Software
+* F. Husain, P. Proulx, M. -W. Chang, R. Romero-Gómez and H. Vasquez, "A Mixed-Initiative Visual Analytics Approach for Qualitative Causal Modeling," 2021 IEEE Visualization Conference (VIS), 2021, pp. 121-125, doi: 10.1109/VIS49827.2021.9623318.
+
 
 ## Quantitative Analysis
 
