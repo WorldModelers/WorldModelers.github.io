@@ -62,7 +62,7 @@ Natural Language Processing (EMNLP-IJCNLP 2019).
 
 ### Multi-Institute Collaborations
 * (Submitted) [Two Six Technologies, University of Arizona, Harvard Medical School, Raytheon BBN, Qntfy] Taxonomy Builder: a data-driven and user-centric tool for streamlining taxonomy construction
-* [University of Arizona, Harvard Medical School, University of Florida, Uncharted] Submitted modeling paper to Modeling the World’s Systems Conference 2019
+* [University of Arizona, Harvard Medical School, University of Florida, Uncharted] MOIRE: MOdeling and Inference from REading, Submitted modeling paper to Modeling the World’s Systems Conference 2019
 * [University of Arizona, Harvard Medical School, University of Florida, Uncharted] Submitted system demo papers describing Eidos and Delphi to NAACL-HLT 2019 and Modeling the World's Systems Conference 
 * [University of Arizona, Harvard Medical School] Eidos, INDRA, & Delphi: From free text to executable causal models. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)
 
