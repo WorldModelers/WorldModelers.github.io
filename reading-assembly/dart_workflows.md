@@ -254,6 +254,14 @@ will also be propagated to the readers.
   <img src="../images/dart/forklift-submission.png">
 </p>
 
+#### Failed Document Submission
+
+Some documents may not be processed due to corrupt data or unsupported formats (e.g., DART does not perform OCR extraction). 
+Documents that fail extraction can be found in `data/forklift/inbound`.
+
+If you are uploading via the web UI, you will see a `FAILED` status under the document id in the document upload 
+interface.
+
 ### 5. Ontology in a Day (Optional)
 
 DART includes a set of tools for rapidly building or extending an ontology by a process of *concept discovery* and *clustering*, 
