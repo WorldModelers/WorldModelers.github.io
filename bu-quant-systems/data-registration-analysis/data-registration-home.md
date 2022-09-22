@@ -1,9 +1,8 @@
 ---
 layout: default
-title: Data Registration
-nav_order: 3
+title: Structured Data
+parent: Quantitative Analysis Toolkit
 has_children: true
-has_toc: true
 ---
 
 <style>

@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Model Registration
-nav_order: 2
-has_children: true
-has_toc: true
+parent: Expert Domain Models
+grand_parent: Quantitative Analysis Toolkit
+nav_order: 1
 ---
 
 <style>
