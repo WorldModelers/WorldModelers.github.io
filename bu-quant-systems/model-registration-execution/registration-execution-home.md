@@ -1,20 +1,25 @@
 ---
 layout: default
-title: Expert Domain Models
-parent: Quantitative Analysis Toolkit
+title: Model Execution
+nav_order: 4
 has_children: true
+has_toc: true
 ---
-
-
-# Expert Domain Models
-
-Dojo offers powerful domain model registration and execution capabilities. Once models are registered to Dojo, they are executable via single Docker containers, their metadata is provided in a consistent format, and each model has a consistent API. 
-
-The portability of these models makes it simple to execute them in a variety of environments. For World Modelers, model executions are managed by the Causemos HMI. However, Dojo offers a standalone model execution capability described below.
 
 # Model Execution
 
-Dojo offers a command-line interface library for black box domain model execution. This library enables users to execute domain models locally.
+Dojo offers both a command-line interface library and web interface solution for black box domain model execution.
+
+## Quick Execution through Browser
+
+To start a run, navigate to the summary page for the model and select the **Create Model Run** button.
+A form pre-populated with the default parameters will pop up. After you have made the desired modifications
+to the parameters, the model run can be submitted with the button on the bottom left.
+
+![Create Run](../../images/dojo/model-run-form.png)
+
+## CLI Components
+This library enables users to execute domain models locally.
 
 The library has 7 key methods:
 
