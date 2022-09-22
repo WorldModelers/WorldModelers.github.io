@@ -16,7 +16,7 @@ To start a run, navigate to the summary page for the model and select the **Crea
 A form pre-populated with the default parameters will pop up. After you have made the desired modifications
 to the parameters, the model run can be submitted with the button on the bottom left.
 
-![Create Run](../..images/dojo/model-run-form.png)
+![Create Run](../../images/dojo/model-run-form.png)
 
 ## CLI Components
 This library enables users to execute domain models locally.
